@@ -5,6 +5,7 @@ import numpy as np
 import open3d as o3d
 import os
 import cv2
+from types import SimpleNamespace
 from scipy.spatial import cKDTree
 from scipy.spatial.transform import Rotation
 
@@ -32,27 +33,26 @@ def depth_image_to_point_cloud(rgb, depth_m, width, height, hfov):
     Points come out in row-major pixel order; an all-invalid frame yields
     an empty cloud. Inputs are not modified.
     """
-    # TODO: Convert `rgb` and `depth_m` to NumPy-compatible arrays and
-    # validate that the depth shape agrees with `(height, width)`.
-    # TODO: Convert depth values to metres when the input representation
-    # requires it; follow the capture convention used by the caller and do
-    # not hardcode camera parameters from another capture.
-    # TODO: Create a row-major pixel grid `(u, v)` covering the image.
-    # TODO: Build a validity mask and discard invalid depth values
-    # (`depth <= 0`).
-    # TODO: Derive focal lengths and the principal point from `width`,
-    # `height`, and `hfov`.
-    # TODO: Implement pinhole unprojection:
-    #   x = (u - CX) * z / FX
-    #   y = (v - CY) * z / FY
-    #   z = depth
-    # Use the coordinate sign convention documented by the function. In an
-    # assignment variant that uses a camera looking toward `-Z`, the final
-    # line is `z = -depth`; reconcile that choice with the existing
-    # docstring and `CAM_TO_GT_AXES` convention before implementing.
-    # TODO: Construct and return an Open3D `PointCloud`, including RGB
-    # colors normalized to `[0, 1]` and preserving row-major point order.
-    raise NotImplementedError("TODO: implement depth_image_to_point_cloud")
+    rgb = np.asarray(rgb)
+    depth = np.asarray(depth_m)
+    if depth.shape != (height, width) or rgb.shape != (height, width, 3):
+        raise ValueError("RGB and depth shapes must match the capture intrinsics")
+    if np.issubdtype(depth.dtype, np.integer):
+        depth = depth.astype(np.float64) / DEPTH_SCALE
+    else:
+        depth = depth.astype(np.float64, copy=False)
+    valid = np.isfinite(depth) & (depth > 0)
+    v, u = np.indices((height, width))
+    z = depth[valid]
+    focal = width / (2.0 * np.tan(np.deg2rad(hfov) / 2.0))
+    cx, cy = width / 2.0, height / 2.0
+    points = np.column_stack(((u[valid] - cx) * z / focal,
+                              (v[valid] - cy) * z / focal, z))
+    colors = rgb[valid][:, ::-1].astype(np.float64) / 255.0
+    cloud = o3d.geometry.PointCloud()
+    cloud.points = o3d.utility.Vector3dVector(points)
+    cloud.colors = o3d.utility.Vector3dVector(colors)
+    return cloud
 
 
 def preprocess_point_cloud(pcd, voxel_size):
@@ -64,15 +64,13 @@ def preprocess_point_cloud(pcd, voxel_size):
     neighbours) for RANSAC matching. Returns the downsampled cloud and
     its FPFH feature set. Pairwise registration is performed by reconstruct().
     """
-    # TODO: Voxel-downsample `pcd` with `voxel_size`.
-    # TODO: Estimate normals for `pcd_down`, because Point-to-Plane ICP
-    # requires them. Use a hybrid KD-tree search radius of
-    # `voxel_size * 2` and at most 30 neighbours.
-    # TODO: Compute FPFH features for `pcd_down` using radius
-    # `voxel_size * 5` and at most 100 neighbours.
-    # TODO: Return the downsampled cloud and its FPFH feature object as
-    # `(pcd_down, fpfh)`.
-    raise NotImplementedError("TODO: implement preprocess_point_cloud")
+    pcd_down = pcd.voxel_down_sample(voxel_size)
+    pcd_down.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(
+        radius=voxel_size * 2, max_nn=30))
+    fpfh = o3d.pipelines.registration.compute_fpfh_feature(
+        pcd_down, o3d.geometry.KDTreeSearchParamHybrid(
+            radius=voxel_size * 5, max_nn=100))
+    return pcd_down, fpfh
 
 
 def local_icp_algorithm(source_down, target_down, trans_init, threshold):
@@ -83,42 +81,62 @@ def local_icp_algorithm(source_down, target_down, trans_init, threshold):
     correspondence `threshold`. Returns the RegistrationResult; its
     `.transformation` is the refined 4x4.
     """
-    # TODO: Ensure both source and target clouds have normals, estimating
-    # them if necessary.
-    # TODO: Call `o3d.pipelines.registration.registration_icp` with
-    # `source_down`, `target_down`, `threshold`, and `trans_init`.
-    # TODO: Use `TransformationEstimationPointToPlane()` and an explicit
-    # convergence criterion.
-    # TODO: Return the registration result unchanged so its transformation
-    # and metrics remain available to `reconstruct` and diagnostics
-    # callbacks.
-    raise NotImplementedError("TODO: implement local_icp_algorithm")
+    for cloud in (source_down, target_down):
+        if not cloud.has_normals():
+            cloud.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(
+                radius=threshold * 2, max_nn=30))
+    return o3d.pipelines.registration.registration_icp(
+        source_down, target_down, threshold, trans_init,
+        o3d.pipelines.registration.TransformationEstimationPointToPlane(),
+        o3d.pipelines.registration.ICPConvergenceCriteria(max_iteration=100))
 
 
 def my_local_icp_algorithm(source_down, target_down, trans_init, voxel_size):
-    """From-scratch point-to-point ICP (the optional Bonus Track backend).
+    """From-scratch point-to-plane ICP (the optional Bonus Track backend).
 
-    Each iteration transforms the source by the current estimate, finds
-    nearest neighbours in the target via cKDTree, keeps pairs closer than
-    `voxel_size * 1.5` (stops below 10 survivors), and solves the optimal
-    rigid update with the Kabsch SVD including a reflection fix. Composes
-    each delta onto the running transform for up to 60 iterations, stopping
-    when the mean inlier error changes by less than 1e-6. Returns a small
-    object exposing the final 4x4 as `.transformation`.
+    Transform the source, match nearest target points, and solve a linearized
+    point-to-plane pose update for up to 60 iterations. The result exposes
+    transformation and the registration metrics used by diagnostics.
     """
-    # TODO: Initialize the running transform from `trans_init`.
-    # TODO: Transform source points with the current estimate.
-    # TODO: Establish nearest-neighbour correspondences against the target.
-    # TODO: Reject correspondences outside an appropriate distance threshold
-    # and stop safely when too few correspondences remain.
-    # TODO: Use target normals to form and solve the point-to-plane
-    # linearized pose update. Compose each update into the running 4x4
-    # transform. Do not replace this with a call to Open3D's ICP; this is
-    # the bonus custom backend selected by `version != "open3d"`.
-    # TODO: Stop on convergence or a bounded iteration count.
-    # TODO: Return a result-like object exposing the final transform as
-    # `.transformation`.
-    raise NotImplementedError("TODO: implement my_local_icp_algorithm")
+    transform = np.asarray(trans_init, dtype=np.float64).copy()
+    source = np.asarray(source_down.points)
+    target = np.asarray(target_down.points)
+    if not len(source) or not len(target):
+        return SimpleNamespace(transformation=transform, fitness=0.0,
+                               inlier_rmse=0.0, correspondence_set=[])
+    if not target_down.has_normals():
+        target_down.estimate_normals(o3d.geometry.KDTreeSearchParamHybrid(
+            radius=voxel_size * 3, max_nn=30))
+    normals = np.asarray(target_down.normals)
+    tree = cKDTree(target)
+    gate = voxel_size * 1.5
+    last_error = np.inf
+    for _ in range(60):
+        moved = source @ transform[:3, :3].T + transform[:3, 3]
+        distances, indices = tree.query(moved)
+        valid = (distances < gate) & np.all(np.isfinite(normals[indices]), axis=1)
+        if np.count_nonzero(valid) < 10:
+            break
+        p, q, n = moved[valid], target[indices[valid]], normals[indices[valid]]
+        jacobian = np.column_stack((np.cross(p, n), n))
+        residual = np.sum(n * (p - q), axis=1)
+        step = np.linalg.lstsq(jacobian, -residual, rcond=None)[0]
+        delta = np.eye(4)
+        delta[:3, :3] = Rotation.from_rotvec(step[:3]).as_matrix()
+        delta[:3, 3] = step[3:]
+        transform = delta @ transform
+        error = np.mean(np.abs(residual))
+        if abs(last_error - error) < 1e-6 or np.linalg.norm(step) < 1e-6:
+            break
+        last_error = error
+    moved = source @ transform[:3, :3].T + transform[:3, 3]
+    distances, indices = tree.query(moved)
+    valid = distances < gate
+    correspondence_set = np.column_stack((np.flatnonzero(valid), indices[valid]))
+    return SimpleNamespace(
+        transformation=transform, fitness=float(np.mean(valid)),
+        inlier_rmse=float(np.sqrt(np.mean(distances[valid] ** 2))) if np.any(valid) else 0.0,
+        correspondence_set=correspondence_set)
 
 
 def remove_ceiling_points(point_cloud, margin=1.0):
@@ -164,11 +182,20 @@ def reconstruct(data_root, version="open3d", voxel_size=0.05, verbose=True,
                      GT stays on disk; visualize_and_evaluate loads and
                      subsets it by the same stems when scoring.
     """
-    # TODO Stage 1: Load capture-specific intrinsics (`width`, `height`,
-    # `hfov`) and select RGB/depth frame pairs in the requested order.
-    # `frames=None` uses numeric batch order; an explicit `frames` list
-    # keeps its given order.
-    raise NotImplementedError("TODO: implement reconstruct")
+    with open(os.path.join(data_root, "intrinsics.json"), encoding="utf-8") as handle:
+        intrinsics = json.load(handle)
+    width, height = int(intrinsics["width"]), int(intrinsics["height"])
+    hfov = float(intrinsics["hfov"])
+    rgb_dir, depth_dir = (os.path.join(data_root, name) for name in ("rgb", "depth"))
+    def stems(directory):
+        return {int(name[:-4]) for name in os.listdir(directory)
+                if name.lower().endswith(".png") and name[:-4].isdigit()}
+    available = stems(rgb_dir) & stems(depth_dir)
+    selected = sorted(available) if frames is None else [int(stem) for stem in frames
+                                                         if int(stem) in available]
+    pairs = [(os.path.join(rgb_dir, f"{stem}.png"),
+              os.path.join(depth_dir, f"{stem}.png")) for stem in selected]
+    o3d.utility.random.seed(registration_seed)
 
     T_global = np.eye(4)          # frame i -> frame-0 camera frame
     pred_cam_pos = []
@@ -180,19 +207,19 @@ def reconstruct(data_root, version="open3d", voxel_size=0.05, verbose=True,
     icp_thr = voxel_size * 1.5
 
     for i, (rgb_path, depth_path) in enumerate(pairs):
-        # TODO Stage 2: Read the RGB-D frame, skip unreadable frames using
-        # the existing warning and control-flow behavior, and convert depth
-        # to metres.
+        stem = selected[i]
+        rgb = cv2.imread(rgb_path, cv2.IMREAD_COLOR)
+        depth = cv2.imread(depth_path, cv2.IMREAD_UNCHANGED)
+        depth_m = None if depth is None else depth.astype(np.float64) / DEPTH_SCALE
+        if (rgb is not None and depth_m is not None and
+                (rgb.shape[:2] != (height, width) or depth_m.shape != (height, width))):
+            rgb = None
         if rgb is None or depth_m is None:
             if verbose:
                 print(f"  Warning: could not load frame {i}, skipping.")
             continue
 
-        # TODO Stage 3: Convert the frame to a point cloud with
-        # `depth_image_to_point_cloud`.
         pcd = depth_image_to_point_cloud(rgb, depth_m, width, height, hfov)
-        # TODO Stage 4: Preprocess it with `preprocess_point_cloud` for
-        # voxel downsampling, normals, and FPFH.
         cur_down, cur_fpfh = preprocess_point_cloud(pcd, voxel_size)
         if pipeline_callback is not None:
             pipeline_callback("frame", {
@@ -202,23 +229,22 @@ def reconstruct(data_root, version="open3d", voxel_size=0.05, verbose=True,
             })
 
         if prev_down is not None:
-            # TODO Stage 6: For every frame after the first processed frame,
-            # perform global FPFH feature matching and RANSAC registration
-            # to obtain `trans_init`.
-            # TODO Stage 7: Run the selected local backend: Open3D
-            # Point-to-Plane ICP for `version == "open3d"`, otherwise the
-            # custom ICP backend.
+            coarse_result = o3d.pipelines.registration.registration_ransac_based_on_feature_matching(
+                cur_down, prev_down, cur_fpfh, prev_fpfh, True,
+                voxel_size * 1.5,
+                o3d.pipelines.registration.TransformationEstimationPointToPoint(False),
+                3, [o3d.pipelines.registration.CorrespondenceCheckerBasedOnEdgeLength(0.9),
+                    o3d.pipelines.registration.CorrespondenceCheckerBasedOnDistance(
+                        voxel_size * 1.5)],
+                o3d.pipelines.registration.RANSACConvergenceCriteria(100000, 0.999))
+            trans_init = coarse_result.transformation
             if version == 'open3d':
                 result_icp = local_icp_algorithm(
                     cur_down, prev_down, trans_init, icp_thr)
             else:   # my_icp
                 result_icp = my_local_icp_algorithm(
                     cur_down, prev_down, trans_init, voxel_size)
-            # TODO Stage 8: Accumulate the returned transform into the
-            # frame-0 coordinate system (`T_global` maps each processed
-            # frame into the frame-0 camera coordinate system;
-            # registration is always current frame to the previous
-            # processed frame).
+            T_global = T_global @ result_icp.transformation
             if pipeline_callback is not None and prev_pair_index == i - 1:
                 pipeline_callback("pair", {
                     "prev_stem": prev_stem,
@@ -247,19 +273,13 @@ def reconstruct(data_root, version="open3d", voxel_size=0.05, verbose=True,
                     "icp_transformation": result_icp.transformation,
                 })
 
-        # TODO Stage 10: Append the current camera position to
-        # `pred_cam_pos` (one entry per successfully processed frame).
         pred_cam_pos.append(T_global[:3, 3].copy())
 
         if build_cloud:
-            # TODO Stage 11: If `build_cloud` is enabled, optionally
-            # downsample only the merged map, transform the current cloud
-            # by the accumulated transform, and add it to `global_pcd`.
-            # This must not alter trajectory estimation.
-            pass
+            map_frame = pcd.voxel_down_sample(down_voxel) if down_voxel else pcd
+            map_frame.transform(T_global)
+            global_pcd += map_frame
 
-        # TODO Stage 12: Update previous-frame state and preserve progress
-        # reporting.
         prev_down, prev_fpfh = cur_down, cur_fpfh
         prev_depth_path = depth_path
         prev_stem = stem
@@ -300,20 +320,33 @@ def visualize_and_evaluate(reconstructed_pcd, predicted_cam_poses, data_root,
        (skipped when show=False, e.g. headless scoring). Ceiling points have
        already been removed from the merged map by `reconstruct`.
     """
-    # TODO: Load `GT_pose.npy` when present and map requested `frames` to
-    # the correct ground-truth rows while preserving requested order.
-    # TODO: Handle missing or empty ground truth and empty predictions
-    # without raising; return an infinite mean error when no score can be
-    # computed.
-    # TODO: Reconcile predicted and ground-truth coordinate conventions
-    # using the existing camera-axis and frame-0 alignment conventions.
-    # TODO: Compute mean camera-centre L2 distance:
-    #   dx = predicted_x - gt_x
-    #   dy = predicted_y - gt_y
-    #   dz = predicted_z - gt_z
-    #   L2 = sqrt(dx**2 + dy**2 + dz**2)
-    #   mean_l2 = mean(L2)
-    raise NotImplementedError("TODO: implement trajectory evaluation")
+    pred = (np.empty((0, 3)) if predicted_cam_poses is None else
+            np.asarray(predicted_cam_poses, dtype=np.float64).reshape(-1, 3))
+    pred_disp = pred @ CAM_TO_GT_AXES
+    gt_disp = np.empty((0, 3))
+    gt_path = os.path.join(data_root, "GT_pose.npy") if data_root else None
+    if gt_path and os.path.isfile(gt_path):
+        gt = np.load(gt_path)
+        if frames is not None:
+            rgb_dir = os.path.join(data_root, "rgb")
+            depth_dir = os.path.join(data_root, "depth")
+            if os.path.isdir(rgb_dir) and os.path.isdir(depth_dir):
+                def stems(directory):
+                    return {int(name[:-4]) for name in os.listdir(directory)
+                            if name.lower().endswith(".png") and name[:-4].isdigit()}
+                ordered = sorted(stems(rgb_dir) & stems(depth_dir))
+                rows = {stem: i for i, stem in enumerate(ordered)}
+                gt = gt[[rows[int(stem)] for stem in frames
+                         if int(stem) in rows and rows[int(stem)] < len(gt)]]
+            else:
+                gt = gt[:len(frames)]
+        if len(gt):
+            qw, qx, qy, qz = gt[0, 3:7]
+            R0 = Rotation.from_quat([qx, qy, qz, qw]).as_matrix()
+            gt_disp = (gt[:, :3] - gt[0, :3]) @ R0
+    n = min(len(pred_disp), len(gt_disp))
+    mean_l2_error = (float(np.mean(np.linalg.norm(pred_disp[:n] - gt_disp[:n], axis=1)))
+                     if n else float("inf"))
     print(f"Mean L2 distance: {mean_l2_error:.6f} meters  (over {n} frames, "
           f"{0 if predicted_cam_poses is None else len(predicted_cam_poses)} "
           f"reconstructed)")
@@ -323,12 +356,24 @@ def visualize_and_evaluate(reconstructed_pcd, predicted_cam_poses, data_root,
             save_path, frames=frames, title=title)
     if not show:
         return mean_l2_error
-    # TODO: Create a `LineSet` for the estimated trajectory colored red.
-    # TODO: Create a `LineSet` for the ground-truth trajectory colored black.
-    # TODO: Add the available map and trajectories to the Open3D
-    # visualization when `show=True`; keep headless scoring functional when
-    # `show=False`.
-    raise NotImplementedError("TODO: implement trajectory visualization")
+    geoms = []
+    if reconstructed_pcd is not None and len(reconstructed_pcd.points):
+        map_display = o3d.geometry.PointCloud(reconstructed_pcd)
+        axes = np.eye(4)
+        axes[:3, :3] = CAM_TO_GT_AXES
+        map_display.transform(axes)
+        geoms.append(map_display)
+    for trajectory, color in ((pred_disp, [1.0, 0.0, 0.0]),
+                              (gt_disp, [0.0, 0.0, 0.0])):
+        if len(trajectory) > 1:
+            lines = o3d.geometry.LineSet()
+            lines.points = o3d.utility.Vector3dVector(trajectory)
+            edges = [[i, i + 1] for i in range(len(trajectory) - 1)]
+            lines.lines = o3d.utility.Vector2iVector(edges)
+            lines.colors = o3d.utility.Vector3dVector([color] * len(edges))
+            geoms.append(lines)
+    if not geoms:
+        return mean_l2_error
     print(f"[visualize] opening visualiser for {title} …  (press Q to close)")
     o3d.visualization.draw_geometries(
         geoms, window_name=f'HW1 Reconstruction - {title}',
