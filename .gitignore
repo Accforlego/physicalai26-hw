@@ -2,3 +2,4 @@
 hw1/eval/
 hw1/trajectories/
 
+*.pyc
