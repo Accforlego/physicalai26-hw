@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "prior_artifacts_unchanged": 44,
+  "baseline_graph_preserved": true,
+  "sealed_evidence_complete": true,
+  "selected_frame_count": 180,
+  "added_vs_prior": [
+    104
+  ],
+  "splice_count": 8,
+  "max_gap_length": 2,
+  "overwrite_guard_passed": true
+}
