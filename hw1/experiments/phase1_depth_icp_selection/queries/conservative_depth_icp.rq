@@ -1,0 +1,34 @@
+PREFIX hw1: <http://taica.course/hw1/ontology#>
+PREFIX exp: <http://taica.course/hw1/experiment/>
+
+# Evidence-based candidate: more than 15% missing depth AND
+# (ICP fitness < 0.90 OR ICP inlier RMSE > 0.025 m).
+# Keep every third original frame as a bridge, so no more than two
+# consecutive original frames can be removed. Always retain frame 1.
+# Thresholds are exploratory choices, not course-defined quality labels.
+# No GT position or trajectory error participates in selection.
+SELECT DISTINCT ?frameIndex WHERE {
+  exp:phase1_baseline hw1:onBatch ?batch .
+  ?batch hw1:hasFrame ?frame .
+  ?frame hw1:frameIndex ?frameIndex ; hw1:hasDepthImage ?depth .
+
+  {
+    SELECT ?depth
+           (MAX(IF(?definition = hw1:RawPointCount, ?value, 0)) AS ?rawValue)
+           (MAX(IF(?definition = hw1:ICPInlierFitness, ?value, 0)) AS ?fitness)
+           (MAX(IF(?definition = hw1:ICPInlierRMSE, ?value, 0)) AS ?error)
+    WHERE {
+      VALUES ?definition {
+        hw1:RawPointCount hw1:ICPInlierFitness hw1:ICPInlierRMSE
+      }
+      ?occ hw1:hasDefinition ?definition ;
+           hw1:inExperiment exp:phase1_baseline ;
+           hw1:hasCurrentFrame ?depth ; hw1:value ?value .
+    }
+    GROUP BY ?depth
+  }
+  FILTER (?frameIndex = 1 ||
+          ?frameIndex - 3 * FLOOR(?frameIndex / 3) = 0 ||
+          !(?rawValue < 222822.4 && (?fitness < 0.90 || ?error > 0.025)))
+}
+ORDER BY ?frameIndex

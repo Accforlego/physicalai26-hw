@@ -1,0 +1,4 @@
+run,frame_count,mean_l2_m,retained_fraction,reconstruction_seconds,total_seconds,voxel_size_m,seed
+baseline_recorded,191,0.058834807103078444,1,not recorded,not recorded,0.05,0
+baseline_on_selected_frames,179,0.05789539885480518,0.93717277486911,not rerun,not rerun,0.05,0
+selected,179,0.30499989139595973,0.93717277486911,278.55640270399454,280.4385818949959,0.05,0
