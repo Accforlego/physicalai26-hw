@@ -70,6 +70,57 @@ pipeline factors and records a baseline, and `explore` displays the results and
 writes interactive plots. For the full workflow, SPARQL frame selection, and
 query examples, see [`docs/e2e-workflow.md`](docs/e2e-workflow.md).
 
+## Optional bonus: custom ICP
+
+The custom implementation is `my_local_icp_algorithm` in
+[`utils.py`](utils.py). It performs point-to-plane ICP using SciPy `cKDTree`
+nearest-neighbor search, distance-gated correspondences, and NumPy least-squares
+rotation/translation updates. It does not call Open3D's `registration_icp`.
+The required Open3D backend remains available and is the default.
+
+To run the custom backend on the full Phase 1 capture, start a new experiment
+from this directory (use a different name if this one already exists):
+
+```bash
+pixi run -e habitat python api.py declare \
+  --name phase1_bonus_my_icp \
+  --data-dir eval/first_floor \
+  --floor 1
+```
+
+Before reconstruction, edit
+`experiments/phase1_bonus_my_icp/phase1_bonus_my_icp.ttl`: fill in the label
+and prediction, change the Experiment node's final `hw1:onBatch` terminator
+from `.` to `;`, and append this setting to that node:
+
+```turtle
+    hw1:hasFactorSetting [
+        a hw1:FactorSetting ;
+        hw1:settingParameter hw1:icpBackend ;
+        hw1:settingRole hw1:ReconstructionSetting ;
+        hw1:settingForFactor hw1:ReconstructionRun ;
+        hw1:settingValue "my_icp"^^xsd:string
+    ] .
+```
+
+Then run and inspect the experiment:
+
+```bash
+pixi run -e habitat python reconstruct.py \
+  --experiment experiments/phase1_bonus_my_icp \
+  --version my_icp --voxel-size 0.05 --seed 0 --no-vis
+
+pixi run -e habitat python api.py explore experiments/phase1_bonus_my_icp
+```
+
+The first reconstruction records measurements and seals the declaration.
+The `--version` flag must agree with the declared `icpBackend`; changing
+backends requires a separate experiment. Compare with a separate Open3D run
+using the same capture, voxel size, seed, and execution environment. The custom
+backend uses up to 60 iterations and Open3D up to 100; their stopping rules
+differ, and a shared seed does not guarantee identical RANSAC initial poses.
+Report these limitations when comparing trajectory error and runtime.
+
 ## More documentation
 
 - [`docs/pixi.md`](docs/pixi.md): environment details and Pixi commands
