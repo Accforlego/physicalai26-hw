@@ -7,6 +7,7 @@
 | `phase1_depth_icp_add104/` | 只在上一輪加回 frame 104 的事後對照快照 | 180 frames；Mean L2 12.58 cm；優於 179 張版，仍不如 baseline |
 | `phase1_voxel_003/` | 全部保留，voxel size 改為 0.03 m 並沿用連動尺度 | 191 frames；Mean L2 2.965 m；明顯劣於 0.05 m baseline |
 | `phase2_baseline/` | API 自動導航採集，沿用 0.05 m 原設定、完整保留影格 | 281 frames；Mean L2 5.882 m；存在明顯配準失敗 |
+| `phase2_manual_baseline/` | 手動採集，沿用 0.05 m 原設定、完整保留影格 | 351 frames；Mean L2 24.07 cm；未涵蓋 severe 區域 |
 
 兩個篩選結果目錄中的 `phase1_baseline.ttl` 保留原 sealed identity，請以明確
 Turtle 檔案路徑操作。詳見該目錄 README，避免把快照目錄名稱當作

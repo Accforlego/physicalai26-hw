@@ -1,0 +1,75 @@
+Matplotlib created a temporary cache directory at /tmp/matplotlib-5iqzjn36 because the default path (/home/wmnet/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Reconstructing 351 frames: voxel=0.05 m, Open3D, seed=0
+  frame    0/350
+Pair -> 10: ICP fitness=0.9825, RMSE=0.0154 m
+Pair -> 20: ICP fitness=0.8676, RMSE=0.0210 m
+  frame   25/350
+Pair -> 30: ICP fitness=0.8959, RMSE=0.0188 m
+Pair -> 40: ICP fitness=0.9685, RMSE=0.0188 m
+Pair -> 50: ICP fitness=0.9703, RMSE=0.0185 m
+  frame   50/350
+Pair -> 60: ICP fitness=0.9179, RMSE=0.0182 m
+Pair -> 70: ICP fitness=0.8921, RMSE=0.0182 m
+  frame   75/350
+Pair -> 80: ICP fitness=0.9987, RMSE=0.0198 m
+Pair -> 90: ICP fitness=0.9085, RMSE=0.0201 m
+Pair -> 100: ICP fitness=0.9289, RMSE=0.0181 m
+  frame  100/350
+Pair -> 110: ICP fitness=0.9964, RMSE=0.0224 m
+Pair -> 120: ICP fitness=0.9724, RMSE=0.0164 m
+  frame  125/350
+Pair -> 130: ICP fitness=0.9395, RMSE=0.0181 m
+Pair -> 140: ICP fitness=0.8572, RMSE=0.0184 m
+Pair -> 150: ICP fitness=0.8875, RMSE=0.0197 m
+  frame  150/350
+Pair -> 160: ICP fitness=0.7165, RMSE=0.0255 m
+Pair -> 170: ICP fitness=0.9951, RMSE=0.0183 m
+  frame  175/350
+Pair -> 180: ICP fitness=0.9511, RMSE=0.0214 m
+Pair -> 190: ICP fitness=0.9342, RMSE=0.0198 m
+Pair -> 200: ICP fitness=0.9617, RMSE=0.0188 m
+  frame  200/350
+Pair -> 210: ICP fitness=0.9308, RMSE=0.0195 m
+Pair -> 220: ICP fitness=0.8673, RMSE=0.0170 m
+  frame  225/350
+Pair -> 230: ICP fitness=0.9954, RMSE=0.0199 m
+Pair -> 240: ICP fitness=0.9955, RMSE=0.0195 m
+Pair -> 250: ICP fitness=0.9963, RMSE=0.0175 m
+  frame  250/350
+Pair -> 260: ICP fitness=0.9140, RMSE=0.0185 m
+Pair -> 270: ICP fitness=0.9823, RMSE=0.0176 m
+  frame  275/350
+Pair -> 280: ICP fitness=0.7897, RMSE=0.0185 m
+Pair -> 290: ICP fitness=0.8247, RMSE=0.0224 m
+Pair -> 300: ICP fitness=0.9282, RMSE=0.0185 m
+  frame  300/350
+Pair -> 310: ICP fitness=0.9998, RMSE=0.0185 m
+Pair -> 320: ICP fitness=0.9457, RMSE=0.0215 m
+  frame  325/350
+Pair -> 330: ICP fitness=0.9825, RMSE=0.0187 m
+[Open3D WARNING] Too few correspondences (1496) after mutual filter, fall back to original correspondences.
+Pair -> 340: ICP fitness=0.9231, RMSE=0.0176 m
+Pair -> 350: ICP fitness=0.8587, RMSE=0.0286 m
+  frame  350/350
+Mean L2 distance: 0.240687 meters  (over 351 frames, 351 reconstructed)
+{
+  "frame_count": 351,
+  "retained_fraction": 1.0,
+  "voxel_size_m": 0.05,
+  "seed": 0,
+  "icp_backend": "open3d",
+  "normal_radius_m": 0.1,
+  "fpfh_radius_m": 0.25,
+  "matching_gate_m": 0.075,
+  "mean_l2_m": 0.24068746833264962,
+  "max_l2_m": 0.48158303005618625,
+  "max_error_frame": 312,
+  "reconstruction_seconds": 106.88296935599647,
+  "total_seconds": 108.49652235599933,
+  "timing_scope": "reconstruction, measurements, diagnostics, evaluation and PNG/NPZ outputs; excludes declaration, sealing, dashboard",
+  "frame_factor_occurrences": 702,
+  "pair_factor_occurrences": 2100,
+  "declaration_sha256": "6a82875d2624593aeee662433ddbba4bccef70ac2ec722a15e3394c94f0b7ba0",
+  "capture_dir": "/home/wmnet/Documents/GitHub/physicalai26-hw/hw1/eval/_data/second_floor/115062519_manual_20261104_082753"
+}
+Inspect results, then use --record to seal the measured full-batch baseline.

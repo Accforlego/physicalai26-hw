@@ -1,0 +1,9 @@
+{
+  "sealed_experiment_readable": true,
+  "frames": 351,
+  "pair_diagnostics": 350,
+  "frame_factor_occurrences": 702,
+  "pair_factor_occurrences": 2100,
+  "saved_trajectory_matches_score": true,
+  "saved_transforms_match_positions": true
+}
