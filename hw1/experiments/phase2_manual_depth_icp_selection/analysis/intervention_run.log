@@ -1,0 +1,44 @@
+Selected 348 frames; metadata={'spliceCount': 3, 'maxGapLength': 1}
+Starting Open3D reconstruction: voxel=0.05 m, seed=0
+  frame    0/347
+  frame   25/347
+  frame   50/347
+  frame   75/347
+  frame  100/347
+  frame  125/347
+  frame  150/347
+  frame  175/347
+  frame  200/347
+  frame  225/347
+  frame  250/347
+  frame  275/347
+  frame  300/347
+  frame  325/347
+[Open3D WARNING] Too few correspondences (1496) after mutual filter, fall back to original correspondences.
+  frame  347/347
+Mean L2 distance: 0.236077 meters  (over 348 frames, 348 reconstructed)
+{
+  "removed_frames": [
+    311,
+    313,
+    350
+  ],
+  "query_sha256": "cbcc1a4757f5aad87b742864a6cda14d201ed8aaec0b65352f10fdc0e988a523",
+  "selected_mean_l2_m": 0.23607740089677495,
+  "baseline_all_mean_l2_m": 0.24068746833264962,
+  "baseline_common_frames_mean_l2_m": 0.23885428779700607,
+  "selected_max_l2_m": 0.47305856399723745,
+  "selected_max_error_frame": 312,
+  "retained_fraction": 0.9914529914529915,
+  "reconstruction_seconds": 102.75382138401619,
+  "total_seconds": 104.34589511700324,
+  "timing_scope": "query excluded; reconstruction, evaluation, NPZ and plot output included",
+  "baseline_runtime_seconds": 108.49652235599933,
+  "voxel_size_m": 0.05,
+  "seed": 0,
+  "icp_backend": "open3d",
+  "map_point_count_after_ceiling_removal": 44237586,
+  "spliceCount": 3,
+  "maxGapLength": 1
+}
+Dry run complete. Inspect outputs, then use --record to save selected evidence.

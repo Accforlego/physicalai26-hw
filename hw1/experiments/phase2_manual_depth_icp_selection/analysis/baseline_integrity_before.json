@@ -1,0 +1,23 @@
+{
+  "experiments/phase2_manual_baseline/README.md": "3bd7460abd20a03ae864a2c93347aaf078e65bf6e56b836c79dfbaab9d0e025c",
+  "experiments/phase2_manual_baseline/reconstruction_baseline.png": "6563006dec92bf33e33d077ba5f1f6ecca02f3d190cc88a85ff9a20f009d77e1",
+  "experiments/phase2_manual_baseline/phase2_manual_baseline.ttl": "22a26c16a35664db56d43a594bc05ade49b9e53fd5c8ee1400547d55ee5ab492",
+  "experiments/phase2_manual_baseline/plots/dashboard.html": "847a104bc07b5fb9f74b757b87b9cbce22d652a55c21fb6dc9f20d416263637e",
+  "experiments/phase2_manual_baseline/plots/distributions.html": "abf79521d527f396a7493e2689c61b14c4a234b382a105faff2477872fa8df64",
+  "experiments/phase2_manual_baseline/plots/tradeoff.html": "e768c92b2007c13f42e636fc1cd067b790140c674c29ff9e647fd07275b3247b",
+  "experiments/phase2_manual_baseline/plots/timelines.html": "9a199c4e2feb05f0bddb92ec02c8a4c64e9efc483edd9d7e8bac19f4abf598be",
+  "experiments/phase2_manual_baseline/analysis/run.log": "f653eebfc1addec6335cd4c1ff0f12c4f481b2c541c2a0ade1ffef99ce560fd6",
+  "experiments/phase2_manual_baseline/analysis/capture_route.png": "c8a35e16c2fc355588485908e11896439a42ced85c3bf8a2a5e021a69db6f1f4",
+  "experiments/phase2_manual_baseline/analysis/capture_overview.png": "3eeabba6d674a877697af00144723b57b55cda924ce86457992b78c3a4c6cbac",
+  "experiments/phase2_manual_baseline/analysis/trajectory.npz": "8bbfa0c44f7d60c64219420157d8b51d6003a5462ca78c6a9d61676759a91166",
+  "experiments/phase2_manual_baseline/analysis/results.json": "68010c7ecfd3537f2761af39bb43d007d44274420f28e9d75bf20d62e99bf49c",
+  "experiments/phase2_manual_baseline/analysis/baseline_results.csv": "725235298a6d4b33cb646f788ccfc5f5fe4b074834664d6a77dfa0570adba81b",
+  "experiments/phase2_manual_baseline/analysis/error_increases.json": "d8371815f9909a528ab968be9aac0014ef9a1c40be703478ce7508c22bf684c1",
+  "experiments/phase2_manual_baseline/analysis/pipeline_measurements.json": "0618dd08458ea77ea8d1db10c2e1639a293ddfaaa07ec9987b01bcde5698531f",
+  "experiments/phase2_manual_baseline/analysis/integrity_verification.json": "79df228a63718631d283c8ddae6a596ca9af1c2cf2c5928817e45bf5d058267b",
+  "experiments/phase2_manual_baseline/analysis/capture_validation.json": "e9f780d0129135d128a7aa6e753390d393f2fa2aeebbed9d9a63555324b0fbf8",
+  "experiments/phase2_manual_baseline/analysis/trajectory_diagnostic.png": "8e5ef52dc79bce387645169ecbc16e9c0d9acb40289dc015ab4613a9165a0496",
+  "experiments/phase2_manual_baseline/analysis/pair_diagnostics.json": "807102f3f1db06b5877986a27aea8e70c808986e8e2dc3b22009e4c4c04d5981",
+  "experiments/phase2_manual_baseline/analysis/run_baseline.py": "08bad18e835a7cef98a6daae14a4612d5066295c22ba560fa36b32d1fb084899",
+  "experiments/phase2_manual_baseline/analysis/findings.md": "9d49732a16d2d6718ce7ce348f660b41af864186fc6db27b186acf3509acdc7b"
+}

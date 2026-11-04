@@ -1,0 +1,33 @@
+{
+  "source_baseline_all_files_unchanged": true,
+  "source_file_count": 21,
+  "snapshot_seal_readable": true,
+  "query_matches_reconstructed_frames": true,
+  "retained_frame_count": 348,
+  "pair_diagnostic_count": 347,
+  "selected_score_matches_saved_errors": true,
+  "prefix_max_coordinate_difference_m": 0.0013233436892226003,
+  "common_frames_gain_m": 0.002776886900231118,
+  "baseline_endpoint_error_m": 0.4039315133497826,
+  "selected_endpoint_error_m": 0.3841990179165912,
+  "new_splice_pairs": [
+    {
+      "prev_stem": 310,
+      "stem": 312,
+      "icp_fitness": 0.9571537872991583,
+      "icp_rmse": 0.02238251552710107
+    },
+    {
+      "prev_stem": 312,
+      "stem": 314,
+      "icp_fitness": 0.8404612386314422,
+      "icp_rmse": 0.023099877064210617
+    },
+    {
+      "prev_stem": 349,
+      "stem": 351,
+      "icp_fitness": 1.0,
+      "icp_rmse": 0.009276548703508858
+    }
+  ]
+}
