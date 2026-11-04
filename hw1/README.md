@@ -34,6 +34,19 @@ using the checked-in `pixi.lock` file.
 
 ## Capture data
 
+If Habitat-Sim and the other dependencies are already installed in an existing
+Python environment, install the local simulator package from this directory
+before running `load.py`:
+
+```bash
+python -m pip install -e packages/simulator
+```
+
+Run this command with the same Python environment used for capture. The local
+`packages/simulator/` source directory and `configs/second_floor.yaml` must be
+included alongside `load.py`. The Pixi setup above installs this local package
+automatically.
+
 Start the interactive Habitat-Sim collector:
 
 ```bash
