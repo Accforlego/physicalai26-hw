@@ -1,0 +1,6 @@
+[experiment] batch 'floor1_first_floor': 191 frames -> 1522 pipeline factor occurrence(s)
+[experiment] experiment IRI  http://taica.course/hw1/experiment/phase1_open3d_reference
+[experiment] declarationDigest 8fa6825472cdec8f2ef34522c750adf25f55f90c139c425b7f0e7d7d74ccc372
+[experiment] appended 13524 triples below the marker -> /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_open3d_reference/phase1_open3d_reference.ttl
+[experiment] this file is now SEALED: edit it above the marker and every reader will refuse it. Next: `api.py explore /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_open3d_reference/phase1_open3d_reference.ttl`, then `reconstruct.py --experiment /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_open3d_reference/phase1_open3d_reference.ttl`.
+Phase 1 open3d baseline sealed with fresh factor measurements.

@@ -1,0 +1,6 @@
+[experiment] batch 'floor1_first_floor': 191 frames -> 1522 pipeline factor occurrence(s)
+[experiment] experiment IRI  http://taica.course/hw1/experiment/phase1_my_icp
+[experiment] declarationDigest f220caab8d1e64e7b0e897266a8374d9e90ea5a41157abfd70dca0d8cd2db6de
+[experiment] appended 13518 triples below the marker -> /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_my_icp/phase1_my_icp.ttl
+[experiment] this file is now SEALED: edit it above the marker and every reader will refuse it. Next: `api.py explore /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_my_icp/phase1_my_icp.ttl`, then `reconstruct.py --experiment /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_my_icp/phase1_my_icp.ttl`.
+Phase 1 my_icp baseline sealed with fresh factor measurements.

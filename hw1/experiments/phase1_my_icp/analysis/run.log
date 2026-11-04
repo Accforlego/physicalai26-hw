@@ -1,0 +1,53 @@
+Reconstructing 191 frames: voxel=0.05 m, my_icp, seed=0
+  frame    0/190
+Pair -> 10: ICP fitness=0.9486, RMSE=0.0203 m
+Pair -> 20: ICP fitness=0.9694, RMSE=0.0167 m
+  frame   25/190
+Pair -> 30: ICP fitness=0.9963, RMSE=0.0177 m
+Pair -> 40: ICP fitness=0.8939, RMSE=0.0183 m
+Pair -> 50: ICP fitness=0.9577, RMSE=0.0218 m
+  frame   50/190
+Pair -> 60: ICP fitness=0.8890, RMSE=0.0201 m
+Pair -> 70: ICP fitness=0.9604, RMSE=0.0214 m
+  frame   75/190
+Pair -> 80: ICP fitness=0.8827, RMSE=0.0223 m
+Pair -> 90: ICP fitness=0.9991, RMSE=0.0220 m
+Pair -> 100: ICP fitness=0.9618, RMSE=0.0286 m
+  frame  100/190
+[Open3D WARNING] Too few correspondences (760) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (932) after mutual filter, fall back to original correspondences.
+Pair -> 110: ICP fitness=0.8012, RMSE=0.0197 m
+Pair -> 120: ICP fitness=0.9983, RMSE=0.0197 m
+  frame  125/190
+Pair -> 130: ICP fitness=0.9792, RMSE=0.0224 m
+Pair -> 140: ICP fitness=0.9193, RMSE=0.0182 m
+Pair -> 150: ICP fitness=0.6674, RMSE=0.0191 m
+  frame  150/190
+Pair -> 160: ICP fitness=0.8609, RMSE=0.0220 m
+Pair -> 170: ICP fitness=0.9899, RMSE=0.0206 m
+  frame  175/190
+Pair -> 180: ICP fitness=0.9842, RMSE=0.0201 m
+Pair -> 190: ICP fitness=0.9976, RMSE=0.0170 m
+  frame  190/190
+Mean L2 distance: 2.174410 meters  (over 191 frames, 191 reconstructed)
+{
+  "frame_count": 191,
+  "retained_fraction": 1.0,
+  "voxel_size_m": 0.05,
+  "seed": 0,
+  "icp_backend": "my_icp",
+  "normal_radius_m": 0.1,
+  "fpfh_radius_m": 0.25,
+  "matching_gate_m": 0.075,
+  "mean_l2_m": 2.174410082465797,
+  "max_l2_m": 7.342940499914029,
+  "max_error_frame": 160,
+  "reconstruction_seconds": 167.18946793099167,
+  "total_seconds": 169.77552718200604,
+  "timing_scope": "reconstruction, measurements, diagnostics, evaluation and PNG/NPZ outputs; excludes declaration, sealing, dashboard",
+  "frame_factor_occurrences": 382,
+  "pair_factor_occurrences": 1140,
+  "declaration_sha256": "f220caab8d1e64e7b0e897266a8374d9e90ea5a41157abfd70dca0d8cd2db6de",
+  "capture_dir": "/home/wmnet/Documents/GitHub/physicalai26-hw/hw1/eval/first_floor"
+}
+Inspect results, then use --record to seal the measured full-batch baseline.

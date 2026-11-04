@@ -1,0 +1,26 @@
+{
+  "original_saved_open3d_mean_l2_m": 0.058834807103078444,
+  "fresh_open3d_mean_l2_m": 0.2910711822991428,
+  "my_icp_mean_l2_m": 2.174410082465797,
+  "custom_to_open3d_reconstruction_time_ratio": 1.0982417051802134,
+  "same_data_and_shared_hyperparameters": true,
+  "checks": {
+    "my_icp": {
+      "all_191_frames": true,
+      "source_capture_and_original_baseline_unchanged": true,
+      "score_verified": true,
+      "finite_valid_rotations": true,
+      "complete_measured_factors": 1522,
+      "sealed_readback": true
+    },
+    "open3d": {
+      "all_191_frames": true,
+      "source_capture_and_original_baseline_unchanged": true,
+      "score_verified": true,
+      "finite_valid_rotations": true,
+      "complete_measured_factors": 1522,
+      "sealed_readback": true
+    }
+  },
+  "timing_limitations": "Single runs, OMP_NUM_THREADS=8. End-to-end reconstruction includes unprojection, features, RANSAC, ICP and cloud merge; not isolated ICP timing. Native convergence rules differ (custom max 60, Open3D max 100)."
+}

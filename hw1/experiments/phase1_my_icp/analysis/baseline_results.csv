@@ -1,0 +1,2 @@
+frame_count,retained_fraction,voxel_size_m,seed,mean_l2_m,max_l2_m,reconstruction_seconds,total_seconds
+191,1.0,0.05,0,2.174410082465797,7.342940499914029,167.18946793099167,169.77552718200604

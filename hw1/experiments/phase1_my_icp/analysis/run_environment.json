@@ -1,0 +1,27 @@
+{
+  "python": "3.9.23 | packaged by conda-forge | (main, Jun  4 2025, 17:57:12) \n[GCC 13.3.0]",
+  "open3d": "0.18.0",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "OMP_NUM_THREADS": 8,
+  "utils_sha256": "fc0a71353bf6b883a41f5c1811831808b2b2dc148cb48c720002cb90f32970dd",
+  "run_order": [
+    "my_icp",
+    "open3d"
+  ],
+  "icp_stop_rules": {
+    "my_icp": "max 60 iterations; abs change of mean absolute point-to-plane residual <1e-6 or step norm <1e-6; stop if fewer than 10 correspondences",
+    "open3d": "ICPConvergenceCriteria(max_iteration=100); other Open3D defaults unchanged"
+  },
+  "shared_settings": {
+    "voxel_m": 0.05,
+    "seed": 0,
+    "normal_radius_m": 0.1,
+    "fpfh_radius_m": 0.25,
+    "matching_gate_m": 0.075,
+    "all_frames": 191,
+    "depth_filtering": false,
+    "frame_selection": false
+  }
+}

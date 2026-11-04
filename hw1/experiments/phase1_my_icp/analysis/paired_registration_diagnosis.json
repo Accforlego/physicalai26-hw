@@ -1,0 +1,38 @@
+{
+  "coarse_transform_max_element_difference_all_pairs": 0.8527117474765872,
+  "coarse_transform_different_pairs_at_1e_10": 188,
+  "critical_pairs": [
+    {
+      "previous_frame": 103,
+      "frame": 104,
+      "my_icp": {
+        "rotation_error_deg": 0.1713869087074708,
+        "translation_norm_m": 0.2658905924143217,
+        "icp_fitness": 0.9480921591840452,
+        "icp_rmse_m": 0.03033076752100559
+      },
+      "open3d": {
+        "rotation_error_deg": 0.2743864883774549,
+        "translation_norm_m": 0.07344536764947372,
+        "icp_fitness": 0.8897186048629451,
+        "icp_rmse_m": 0.029379020846245916
+      }
+    },
+    {
+      "previous_frame": 104,
+      "frame": 105,
+      "my_icp": {
+        "rotation_error_deg": 89.65627236977166,
+        "translation_norm_m": 0.5700960366177857,
+        "icp_fitness": 0.8191376640312984,
+        "icp_rmse_m": 0.028331333619897984
+      },
+      "open3d": {
+        "rotation_error_deg": 0.19941271713437717,
+        "translation_norm_m": 0.530347703336879,
+        "icp_fitness": 0.8770885972776917,
+        "icp_rmse_m": 0.026752303300492643
+      }
+    }
+  ]
+}
