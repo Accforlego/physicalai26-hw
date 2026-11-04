@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "frame_count": 281,
+  "rgb_depth_stems_match": true,
+  "gt_shape": [
+    281,
+    7
+  ],
+  "intrinsics": {
+    "width": 512,
+    "height": 512,
+    "hfov": 90.0
+  },
+  "depth_dtype": "uint16 millimetres",
+  "valid_depth_fraction_min": 0.7095718383789062,
+  "valid_depth_fraction_mean": 0.9619119854584284,
+  "max_adjacent_translation_m": 0.21847085654735565,
+  "max_adjacent_rotation_deg": 12.000008320868465,
+  "zone_counts": {
+    "benign": 30,
+    "moderate": 52,
+    "severe": 16,
+    "outside": 183
+  },
+  "completed_route": true,
+  "failed_goals": [],
+  "nav_sample_route_support_proxy": 0.9763157894736842
+}

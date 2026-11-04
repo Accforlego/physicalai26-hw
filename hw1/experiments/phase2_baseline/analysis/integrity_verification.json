@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "previous_artifacts_unchanged": 89,
+  "frame_count": 281,
+  "pipeline_factor_count": 2242,
+  "sealed_record_valid": true,
+  "stored_metric_matches_evaluation": true,
+  "estimated_rotations_valid": true,
+  "capture_overwrite_guard_passed": true,
+  "baseline_overwrite_guard_passed": true
+}

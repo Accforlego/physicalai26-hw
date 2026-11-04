@@ -1,5 +1,6 @@
 .DS_Store
 hw1/eval/
 hw1/trajectories/
+hw1/replica_v1/
 
 *.pyc

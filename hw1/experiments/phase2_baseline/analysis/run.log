@@ -1,0 +1,77 @@
+Reconstructing 281 frames: voxel=0.05 m, Open3D, seed=0
+  frame    0/280
+Pair -> 10: ICP fitness=0.7801, RMSE=0.0188 m
+Pair -> 20: ICP fitness=0.9751, RMSE=0.0184 m
+  frame   25/280
+Pair -> 30: ICP fitness=1.0000, RMSE=0.0160 m
+Pair -> 40: ICP fitness=0.9371, RMSE=0.0219 m
+[Open3D WARNING] Too few correspondences (5) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (23) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (254) after mutual filter, fall back to original correspondences.
+Pair -> 50: ICP fitness=0.8870, RMSE=0.0184 m
+  frame   50/280
+Pair -> 60: ICP fitness=0.9632, RMSE=0.0208 m
+Pair -> 70: ICP fitness=0.6217, RMSE=0.0213 m
+  frame   75/280
+Pair -> 80: ICP fitness=0.6538, RMSE=0.0201 m
+Pair -> 90: ICP fitness=0.9404, RMSE=0.0210 m
+[Open3D WARNING] Too few correspondences (193) after mutual filter, fall back to original correspondences.
+Pair -> 100: ICP fitness=0.7960, RMSE=0.0225 m
+  frame  100/280
+Pair -> 110: ICP fitness=0.9502, RMSE=0.0262 m
+Pair -> 120: ICP fitness=0.9765, RMSE=0.0159 m
+  frame  125/280
+Pair -> 130: ICP fitness=0.9896, RMSE=0.0231 m
+Pair -> 140: ICP fitness=0.9998, RMSE=0.0180 m
+[Open3D WARNING] Too few correspondences (417) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (420) after mutual filter, fall back to original correspondences.
+Pair -> 150: ICP fitness=0.7530, RMSE=0.0287 m
+  frame  150/280
+[Open3D WARNING] Too few correspondences (1534) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (1501) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (1959) after mutual filter, fall back to original correspondences.
+Pair -> 160: ICP fitness=0.9331, RMSE=0.0208 m
+Pair -> 170: ICP fitness=0.9685, RMSE=0.0238 m
+[Open3D WARNING] Too few correspondences (585) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (348) after mutual filter, fall back to original correspondences.
+  frame  175/280
+Pair -> 180: ICP fitness=1.0000, RMSE=0.0164 m
+[Open3D WARNING] Too few correspondences (54) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (66) after mutual filter, fall back to original correspondences.
+Pair -> 190: ICP fitness=0.6832, RMSE=0.0244 m
+Pair -> 200: ICP fitness=0.9105, RMSE=0.0182 m
+  frame  200/280
+Pair -> 210: ICP fitness=0.9334, RMSE=0.0178 m
+Pair -> 220: ICP fitness=0.7865, RMSE=0.0259 m
+  frame  225/280
+Pair -> 230: ICP fitness=0.9241, RMSE=0.0187 m
+Pair -> 240: ICP fitness=0.9655, RMSE=0.0179 m
+Pair -> 250: ICP fitness=0.8504, RMSE=0.0177 m
+  frame  250/280
+Pair -> 260: ICP fitness=0.9648, RMSE=0.0161 m
+Pair -> 270: ICP fitness=0.8368, RMSE=0.0180 m
+  frame  275/280
+Pair -> 280: ICP fitness=1.0000, RMSE=0.0139 m
+  frame  280/280
+Mean L2 distance: 5.882325 meters  (over 281 frames, 281 reconstructed)
+{
+  "frame_count": 281,
+  "retained_fraction": 1.0,
+  "voxel_size_m": 0.05,
+  "seed": 0,
+  "icp_backend": "open3d",
+  "normal_radius_m": 0.1,
+  "fpfh_radius_m": 0.25,
+  "matching_gate_m": 0.075,
+  "mean_l2_m": 5.882325123340063,
+  "max_l2_m": 12.497798249621747,
+  "max_error_frame": 187,
+  "reconstruction_seconds": 211.92531956799212,
+  "total_seconds": 215.06354348998866,
+  "timing_scope": "reconstruction, measurements, diagnostics, evaluation and PNG/NPZ outputs; excludes declaration, sealing, dashboard",
+  "frame_factor_occurrences": 562,
+  "pair_factor_occurrences": 1680,
+  "declaration_sha256": "821a585f519540f5678e201accf2e57b2e78e78d963dc5afca314eeafdc37eab",
+  "capture_dir": "/home/wmnet/Documents/GitHub/physicalai26-hw/hw1/eval/_data/second_floor/115062519_api"
+}
+Inspect results, then use --record to seal the measured full-batch baseline.
