@@ -1,6 +1,6 @@
 # HW1 report
 
-- Final English PDF: `../output/pdf/report.pdf` (7 pages).
+- Final English PDF: `../output/pdf/report.pdf` (4 pages).
 - Text/figure export for review: `report.md`.
 - PDF content and layout source: `build_report.py`.
 - Figure rendering: `prepare_figures.py`; reads saved measurements and trajectories only.
