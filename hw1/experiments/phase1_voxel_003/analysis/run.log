@@ -1,0 +1,39 @@
+Measuring 191 frames; voxel=0.03 m; seed=0
+  frame    0/190
+  frame   25/190
+  frame   50/190
+[Open3D WARNING] Too few correspondences (6350) after mutual filter, fall back to original correspondences.
+  frame   75/190
+  frame  100/190
+[Open3D WARNING] Too few correspondences (2139) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (1720) after mutual filter, fall back to original correspondences.
+[Open3D WARNING] Too few correspondences (2881) after mutual filter, fall back to original correspondences.
+  frame  125/190
+  frame  150/190
+  frame  175/190
+  frame  190/190
+Mean L2 distance: 2.965126 meters  (over 191 frames, 191 reconstructed)
+{
+  "frame_count": 191,
+  "retained_fraction": 1.0,
+  "voxel_size_m": 0.03,
+  "seed": 0,
+  "icp_backend": "open3d",
+  "normal_radius_m": 0.06,
+  "fpfh_radius_m": 0.15,
+  "ransac_and_icp_distance_gate_m": 0.045,
+  "mean_l2_m": 2.9651260265447825,
+  "reference_mean_l2_m": 0.058834807103078444,
+  "max_l2_m": 10.119251743501598,
+  "max_error_frame": 160,
+  "reference_mean_voxelized_points": 19943.659685863873,
+  "mean_voxelized_points": 49067.48691099476,
+  "reconstruction_seconds": 1521.6039619540097,
+  "total_seconds": 1524.4690425159934,
+  "timing_scope": "reconstruction, fresh measurements, evaluation, NPZ and plots; excludes declaration, sealing and dashboard",
+  "reference_runtime_seconds": null,
+  "declaration_sha256": "b901d0d04c0891f8ec6db5a416a343bb868ebd5f8adc00e71bd6978dcd4a8a78",
+  "frame_factor_occurrences": 382,
+  "pair_factor_occurrences": 1140
+}
+Inspection outputs saved. Use --record to seal the fresh measurements and full-batch run.

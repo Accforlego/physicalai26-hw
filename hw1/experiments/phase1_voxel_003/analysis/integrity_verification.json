@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "previous_artifacts_unchanged": 68,
+  "frame_count": 191,
+  "fresh_factor_occurrences": 1522,
+  "raw_point_counts_equal_reference": true,
+  "new_experiment_identity": "http://taica.course/hw1/experiment/phase1_voxel_003",
+  "stored_score_matches_evaluation": true,
+  "sealed_overwrite_guard_passed": true
+}

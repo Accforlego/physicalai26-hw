@@ -1,0 +1,3 @@
+run,frames,voxel_size_m,mean_l2_m,mean_voxelized_points,normal_radius_m,fpfh_radius_m,matching_gate_m,reconstruction_seconds,total_seconds
+reference,191,0.05,0.058834807103078444,19943.659685863873,0.1,0.25,0.075,not recorded,not recorded
+voxel_003,191,0.03,2.9651260265447825,49067.48691099476,0.06,0.15,0.045,1521.6039619540097,1524.4690425159934

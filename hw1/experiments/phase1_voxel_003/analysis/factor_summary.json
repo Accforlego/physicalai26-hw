@@ -1,0 +1,9 @@
+{
+  "raw_point_counts_identical": true,
+  "relative_mean_l2_change": 49.39748020844002,
+  "voxelized_point_count_ratio": 2.460305063557314,
+  "largest_error_increase_frame": 104,
+  "largest_error_increase_m": 3.4011707503762363,
+  "zero_ransac_correspondence_pairs": [],
+  "zero_icp_correspondence_pairs": []
+}
