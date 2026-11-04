@@ -1,0 +1,16 @@
+{
+  "pages": 7,
+  "pdf_sha256": "7b1dd0d830e3d7c473e42c1b30ef6e9ac82194331681d3c2b47124b2a3f41ca0",
+  "saved_source_hashes_unchanged": true,
+  "key_metrics_match_saved_results": true,
+  "required_questions_present": true,
+  "no_placeholder_text": true,
+  "official_reference_links": [
+    "https://www.open3d.org/docs/release/tutorial/pipelines/icp_registration.html",
+    "https://www.open3d.org/docs/release/tutorial/pipelines/global_registration.html",
+    "https://www.open3d.org/docs/release/tutorial/geometry/pointcloud_outlier_removal.html"
+  ],
+  "markdown_images_resolve": true,
+  "visual_review": "All 7 final page PNGs inspected; text, captions, tables, plots and footer bounds checked.",
+  "new_reconstruction_runs": 0
+}
