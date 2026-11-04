@@ -74,6 +74,9 @@ def make_cfg(config):
     # --- simulator backend ---
     sim_cfg = habitat_sim.SimulatorConfiguration()
     sim_cfg.scene_id = config["scene"]["path"]
+    # RGB-D captures do not need a second semantic-mesh load. In Replica this
+    # can point at the same PLY as the render asset with incompatible settings.
+    sim_cfg.load_semantic_mesh = wants_semantic(config)
     # Habitat's EGL renderer selects a CUDA device by default. Setting this
     # to -1 asks Magnum/Habitat to use the default non-CUDA graphics device
     # when one is available (for example, a software EGL device).

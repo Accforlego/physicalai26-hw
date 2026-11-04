@@ -59,6 +59,27 @@ printed. A zone never entered contributed no perturbed frames.
   parameters. Reconstruction reads them from the capture being
   reconstructed, never from a config.
 
+## Startup messages and empty captures
+
+RGB-D-only collection disables `SimulatorConfiguration.load_semantic_mesh`;
+semantic meshes are loaded only when `output.save_semantic` is enabled. This
+avoids loading the same Replica PLY again as a semantic asset with incompatible
+settings. A missing `mesh_semantic.scn` descriptor message may still appear;
+that descriptor is not required for the RGB and depth sensors used here.
+
+Duplicate static importer messages, the default `no_lights` layout message,
+pygame's AVX2 notice, and the `pkg_resources` deprecation warning do not by
+themselves mean the collector failed. Check that the preview displays RGB/depth
+and that pressing C produces `captured frame ...` in the terminal.
+
+`saved 0 poses` means the collector exited without capturing a frame. Click
+the preview window to give it keyboard focus, press C or Space to capture,
+and finish with Q or Escape. All-zero zone counts follow naturally from an
+empty capture; do not disable uncertainty zones to remove that warning.
+
+On systems where audio initialization fails, use `SDL_AUDIODRIVER=dummy`
+when starting the collector. No audio is needed for RGB-D capture.
+
 ## Performance notes
 
 The preview holds 30 fps by engineering out the expensive parts: the raw
