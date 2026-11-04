@@ -1,0 +1,80 @@
+[
+  {
+    "frame": 1,
+    "raw_points": 262141,
+    "removed_points": 3893,
+    "removed_fraction": 0.014850786408841077,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.005728707732714837,
+      0.01400725968973181,
+      0.020773849829475905,
+      0.04086092225316083,
+      0.12445839864667055
+    ]
+  },
+  {
+    "frame": 55,
+    "raw_points": 242048,
+    "removed_points": 5802,
+    "removed_fraction": 0.023970452141723997,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.0045202204320600944,
+      0.010872965412988359,
+      0.03753334456655413,
+      0.07820887387007121,
+      0.16247726234036233
+    ]
+  },
+  {
+    "frame": 80,
+    "raw_points": 230032,
+    "removed_points": 1980,
+    "removed_fraction": 0.00860749808722261,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.006650735271484347,
+      0.022171365961147507,
+      0.03691109130557917,
+      0.051493819446413194,
+      0.0739866548269709
+    ]
+  },
+  {
+    "frame": 104,
+    "raw_points": 210403,
+    "removed_points": 3552,
+    "removed_fraction": 0.016881888566227632,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.01009148179236768,
+      0.018748661029000017,
+      0.02445706427564524,
+      0.03474110059770004,
+      0.05424699733704143
+    ]
+  },
+  {
+    "frame": 130,
+    "raw_points": 242122,
+    "removed_points": 4265,
+    "removed_fraction": 0.017615086609230057,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.007733380520533647,
+      0.022721051029328573,
+      0.05243041044197148,
+      0.11887326575311126,
+      0.6003624684679373
+    ]
+  },
+  {
+    "frame": 191,
+    "raw_points": 262144,
+    "removed_points": 5267,
+    "removed_fraction": 0.020092010498046875,
+    "sample_mean_neighbor_distance_quantiles_m": [
+      0.007135825324279443,
+      0.01395418508707454,
+      0.033534255898451396,
+      0.0623359335133798,
+      0.10862143305091683
+    ]
+  }
+]

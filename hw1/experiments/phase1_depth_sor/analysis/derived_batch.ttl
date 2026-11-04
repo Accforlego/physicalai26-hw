@@ -1,0 +1,2303 @@
+@prefix ns1: <http://taica.course/hw1/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3> a ns1:Batch ;
+    ns1:batchName "floor1_first_floor_sor_nb20_std3" ;
+    ns1:batchPath "eval/first_floor_sor_nb20_std3" ;
+    ns1:floor 1 ;
+    ns1:hasFrame <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/1>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/10>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/100>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/101>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/102>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/103>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/104>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/105>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/106>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/107>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/108>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/109>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/11>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/110>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/111>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/112>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/113>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/114>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/115>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/116>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/117>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/118>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/119>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/12>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/120>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/121>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/122>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/123>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/124>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/125>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/126>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/127>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/128>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/129>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/13>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/130>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/131>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/132>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/133>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/134>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/135>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/136>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/137>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/138>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/139>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/14>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/140>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/141>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/142>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/143>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/144>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/145>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/146>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/147>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/148>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/149>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/15>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/150>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/151>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/152>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/153>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/154>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/155>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/156>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/157>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/158>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/159>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/16>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/160>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/161>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/162>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/163>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/164>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/165>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/166>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/167>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/168>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/169>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/17>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/170>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/171>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/172>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/173>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/174>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/175>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/176>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/177>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/178>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/179>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/18>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/180>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/181>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/182>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/183>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/184>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/185>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/186>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/187>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/188>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/189>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/19>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/190>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/191>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/2>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/20>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/21>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/22>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/23>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/24>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/25>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/26>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/27>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/28>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/29>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/3>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/30>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/31>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/32>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/33>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/34>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/35>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/36>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/37>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/38>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/39>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/4>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/40>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/41>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/42>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/43>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/44>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/45>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/46>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/47>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/48>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/49>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/5>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/50>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/51>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/52>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/53>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/54>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/55>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/56>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/57>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/58>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/59>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/6>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/60>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/61>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/62>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/63>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/64>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/65>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/66>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/67>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/68>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/69>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/7>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/70>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/71>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/72>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/73>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/74>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/75>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/76>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/77>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/78>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/79>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/8>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/80>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/81>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/82>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/83>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/84>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/85>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/86>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/87>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/88>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/89>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/9>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/90>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/91>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/92>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/93>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/94>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/95>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/96>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/97>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/98>,
+        <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/99> ;
+    prov:wasDerivedFrom <http://taica.course/hw1/data/batch/floor1_first_floor> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/1> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/1.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/10> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/10.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/100> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/100.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/101> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/101.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/102> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/102.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/103> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/103.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/104> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/104.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/105> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/105.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/106> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/106.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/107> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/107.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/108> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/108.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/109> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/109.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/11> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/11.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/110> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/110.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/111> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/111.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/112> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/112.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/113> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/113.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/114> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/114.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/115> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/115.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/116> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/116.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/117> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/117.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/118> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/118.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/119> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/119.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/12> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/12.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/120> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/120.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/121> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/121.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/122> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/122.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/123> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/123.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/124> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/124.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/125> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/125.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/126> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/126.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/127> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/127.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/128> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/128.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/129> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/129.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/13> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/13.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/130> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/130.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/131> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/131.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/132> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/132.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/133> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/133.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/134> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/134.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/135> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/135.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/136> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/136.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/137> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/137.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/138> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/138.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/139> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/139.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/14> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/14.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/140> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/140.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/141> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/141.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/142> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/142.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/143> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/143.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/144> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/144.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/145> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/145.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/146> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/146.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/147> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/147.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/148> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/148.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/149> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/149.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/15> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/15.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/150> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/150.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/151> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/151.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/152> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/152.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/153> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/153.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/154> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/154.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/155> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/155.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/156> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/156.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/157> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/157.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/158> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/158.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/159> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/159.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/16> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/16.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/160> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/160.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/161> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/161.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/162> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/162.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/163> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/163.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/164> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/164.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/165> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/165.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/166> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/166.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/167> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/167.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/168> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/168.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/169> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/169.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/17> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/17.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/170> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/170.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/171> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/171.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/172> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/172.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/173> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/173.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/174> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/174.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/175> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/175.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/176> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/176.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/177> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/177.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/178> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/178.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/179> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/179.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/18> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/18.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/180> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/180.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/181> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/181.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/182> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/182.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/183> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/183.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/184> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/184.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/185> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/185.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/186> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/186.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/187> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/187.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/188> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/188.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/189> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/189.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/19> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/19.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/190> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/190.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/191> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/191.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/2> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/2.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/20> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/20.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/21> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/21.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/22> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/22.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/23> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/23.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/24> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/24.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/25> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/25.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/26> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/26.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/27> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/27.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/28> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/28.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/29> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/29.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/3> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/3.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/30> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/30.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/31> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/31.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/32> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/32.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/33> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/33.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/34> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/34.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/35> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/35.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/36> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/36.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/37> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/37.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/38> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/38.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/39> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/39.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/4> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/4.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/40> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/40.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/41> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/41.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/42> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/42.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/43> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/43.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/44> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/44.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/45> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/45.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/46> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/46.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/47> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/47.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/48> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/48.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/49> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/49.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/5> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/5.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/50> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/50.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/51> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/51.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/52> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/52.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/53> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/53.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/54> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/54.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/55> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/55.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/56> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/56.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/57> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/57.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/58> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/58.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/59> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/59.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/6> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/6.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/60> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/60.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/61> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/61.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/62> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/62.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/63> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/63.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/64> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/64.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/65> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/65.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/66> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/66.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/67> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/67.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/68> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/68.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/69> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/69.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/7> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/7.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/70> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/70.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/71> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/71.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/72> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/72.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/73> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/73.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/74> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/74.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/75> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/75.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/76> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/76.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/77> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/77.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/78> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/78.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/79> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/79.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/8> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/8.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/80> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/80.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/81> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/81.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/82> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/82.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/83> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/83.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/84> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/84.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/85> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/85.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/86> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/86.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/87> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/87.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/88> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/88.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/89> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/89.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/9> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/9.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/90> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/90.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/91> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/91.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/92> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/92.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/93> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/93.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/94> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/94.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/95> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/95.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/96> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/96.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/97> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/97.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/98> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/98.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/99> a ns1:DepthImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/depth/99.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/1> a ns1:Frame ;
+    ns1:frameIndex 1 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/1> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/1> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/10> a ns1:Frame ;
+    ns1:frameIndex 10 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/10> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/10> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/100> a ns1:Frame ;
+    ns1:frameIndex 100 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/100> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/100> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/101> a ns1:Frame ;
+    ns1:frameIndex 101 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/101> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/101> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/102> a ns1:Frame ;
+    ns1:frameIndex 102 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/102> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/102> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/103> a ns1:Frame ;
+    ns1:frameIndex 103 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/103> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/103> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/104> a ns1:Frame ;
+    ns1:frameIndex 104 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/104> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/104> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/105> a ns1:Frame ;
+    ns1:frameIndex 105 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/105> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/105> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/106> a ns1:Frame ;
+    ns1:frameIndex 106 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/106> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/106> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/107> a ns1:Frame ;
+    ns1:frameIndex 107 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/107> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/107> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/108> a ns1:Frame ;
+    ns1:frameIndex 108 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/108> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/108> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/109> a ns1:Frame ;
+    ns1:frameIndex 109 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/109> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/109> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/11> a ns1:Frame ;
+    ns1:frameIndex 11 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/11> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/11> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/110> a ns1:Frame ;
+    ns1:frameIndex 110 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/110> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/110> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/111> a ns1:Frame ;
+    ns1:frameIndex 111 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/111> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/111> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/112> a ns1:Frame ;
+    ns1:frameIndex 112 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/112> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/112> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/113> a ns1:Frame ;
+    ns1:frameIndex 113 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/113> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/113> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/114> a ns1:Frame ;
+    ns1:frameIndex 114 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/114> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/114> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/115> a ns1:Frame ;
+    ns1:frameIndex 115 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/115> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/115> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/116> a ns1:Frame ;
+    ns1:frameIndex 116 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/116> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/116> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/117> a ns1:Frame ;
+    ns1:frameIndex 117 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/117> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/117> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/118> a ns1:Frame ;
+    ns1:frameIndex 118 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/118> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/118> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/119> a ns1:Frame ;
+    ns1:frameIndex 119 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/119> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/119> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/12> a ns1:Frame ;
+    ns1:frameIndex 12 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/12> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/12> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/120> a ns1:Frame ;
+    ns1:frameIndex 120 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/120> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/120> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/121> a ns1:Frame ;
+    ns1:frameIndex 121 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/121> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/121> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/122> a ns1:Frame ;
+    ns1:frameIndex 122 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/122> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/122> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/123> a ns1:Frame ;
+    ns1:frameIndex 123 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/123> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/123> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/124> a ns1:Frame ;
+    ns1:frameIndex 124 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/124> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/124> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/125> a ns1:Frame ;
+    ns1:frameIndex 125 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/125> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/125> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/126> a ns1:Frame ;
+    ns1:frameIndex 126 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/126> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/126> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/127> a ns1:Frame ;
+    ns1:frameIndex 127 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/127> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/127> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/128> a ns1:Frame ;
+    ns1:frameIndex 128 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/128> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/128> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/129> a ns1:Frame ;
+    ns1:frameIndex 129 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/129> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/129> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/13> a ns1:Frame ;
+    ns1:frameIndex 13 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/13> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/13> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/130> a ns1:Frame ;
+    ns1:frameIndex 130 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/130> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/130> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/131> a ns1:Frame ;
+    ns1:frameIndex 131 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/131> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/131> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/132> a ns1:Frame ;
+    ns1:frameIndex 132 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/132> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/132> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/133> a ns1:Frame ;
+    ns1:frameIndex 133 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/133> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/133> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/134> a ns1:Frame ;
+    ns1:frameIndex 134 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/134> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/134> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/135> a ns1:Frame ;
+    ns1:frameIndex 135 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/135> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/135> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/136> a ns1:Frame ;
+    ns1:frameIndex 136 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/136> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/136> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/137> a ns1:Frame ;
+    ns1:frameIndex 137 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/137> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/137> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/138> a ns1:Frame ;
+    ns1:frameIndex 138 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/138> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/138> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/139> a ns1:Frame ;
+    ns1:frameIndex 139 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/139> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/139> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/14> a ns1:Frame ;
+    ns1:frameIndex 14 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/14> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/14> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/140> a ns1:Frame ;
+    ns1:frameIndex 140 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/140> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/140> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/141> a ns1:Frame ;
+    ns1:frameIndex 141 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/141> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/141> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/142> a ns1:Frame ;
+    ns1:frameIndex 142 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/142> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/142> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/143> a ns1:Frame ;
+    ns1:frameIndex 143 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/143> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/143> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/144> a ns1:Frame ;
+    ns1:frameIndex 144 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/144> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/144> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/145> a ns1:Frame ;
+    ns1:frameIndex 145 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/145> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/145> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/146> a ns1:Frame ;
+    ns1:frameIndex 146 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/146> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/146> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/147> a ns1:Frame ;
+    ns1:frameIndex 147 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/147> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/147> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/148> a ns1:Frame ;
+    ns1:frameIndex 148 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/148> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/148> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/149> a ns1:Frame ;
+    ns1:frameIndex 149 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/149> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/149> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/15> a ns1:Frame ;
+    ns1:frameIndex 15 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/15> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/15> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/150> a ns1:Frame ;
+    ns1:frameIndex 150 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/150> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/150> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/151> a ns1:Frame ;
+    ns1:frameIndex 151 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/151> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/151> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/152> a ns1:Frame ;
+    ns1:frameIndex 152 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/152> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/152> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/153> a ns1:Frame ;
+    ns1:frameIndex 153 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/153> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/153> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/154> a ns1:Frame ;
+    ns1:frameIndex 154 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/154> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/154> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/155> a ns1:Frame ;
+    ns1:frameIndex 155 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/155> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/155> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/156> a ns1:Frame ;
+    ns1:frameIndex 156 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/156> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/156> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/157> a ns1:Frame ;
+    ns1:frameIndex 157 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/157> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/157> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/158> a ns1:Frame ;
+    ns1:frameIndex 158 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/158> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/158> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/159> a ns1:Frame ;
+    ns1:frameIndex 159 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/159> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/159> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/16> a ns1:Frame ;
+    ns1:frameIndex 16 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/16> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/16> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/160> a ns1:Frame ;
+    ns1:frameIndex 160 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/160> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/160> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/161> a ns1:Frame ;
+    ns1:frameIndex 161 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/161> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/161> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/162> a ns1:Frame ;
+    ns1:frameIndex 162 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/162> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/162> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/163> a ns1:Frame ;
+    ns1:frameIndex 163 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/163> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/163> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/164> a ns1:Frame ;
+    ns1:frameIndex 164 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/164> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/164> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/165> a ns1:Frame ;
+    ns1:frameIndex 165 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/165> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/165> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/166> a ns1:Frame ;
+    ns1:frameIndex 166 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/166> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/166> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/167> a ns1:Frame ;
+    ns1:frameIndex 167 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/167> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/167> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/168> a ns1:Frame ;
+    ns1:frameIndex 168 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/168> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/168> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/169> a ns1:Frame ;
+    ns1:frameIndex 169 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/169> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/169> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/17> a ns1:Frame ;
+    ns1:frameIndex 17 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/17> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/17> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/170> a ns1:Frame ;
+    ns1:frameIndex 170 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/170> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/170> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/171> a ns1:Frame ;
+    ns1:frameIndex 171 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/171> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/171> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/172> a ns1:Frame ;
+    ns1:frameIndex 172 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/172> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/172> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/173> a ns1:Frame ;
+    ns1:frameIndex 173 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/173> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/173> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/174> a ns1:Frame ;
+    ns1:frameIndex 174 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/174> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/174> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/175> a ns1:Frame ;
+    ns1:frameIndex 175 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/175> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/175> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/176> a ns1:Frame ;
+    ns1:frameIndex 176 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/176> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/176> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/177> a ns1:Frame ;
+    ns1:frameIndex 177 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/177> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/177> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/178> a ns1:Frame ;
+    ns1:frameIndex 178 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/178> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/178> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/179> a ns1:Frame ;
+    ns1:frameIndex 179 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/179> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/179> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/18> a ns1:Frame ;
+    ns1:frameIndex 18 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/18> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/18> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/180> a ns1:Frame ;
+    ns1:frameIndex 180 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/180> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/180> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/181> a ns1:Frame ;
+    ns1:frameIndex 181 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/181> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/181> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/182> a ns1:Frame ;
+    ns1:frameIndex 182 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/182> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/182> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/183> a ns1:Frame ;
+    ns1:frameIndex 183 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/183> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/183> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/184> a ns1:Frame ;
+    ns1:frameIndex 184 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/184> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/184> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/185> a ns1:Frame ;
+    ns1:frameIndex 185 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/185> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/185> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/186> a ns1:Frame ;
+    ns1:frameIndex 186 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/186> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/186> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/187> a ns1:Frame ;
+    ns1:frameIndex 187 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/187> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/187> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/188> a ns1:Frame ;
+    ns1:frameIndex 188 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/188> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/188> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/189> a ns1:Frame ;
+    ns1:frameIndex 189 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/189> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/189> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/19> a ns1:Frame ;
+    ns1:frameIndex 19 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/19> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/19> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/190> a ns1:Frame ;
+    ns1:frameIndex 190 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/190> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/190> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/191> a ns1:Frame ;
+    ns1:frameIndex 191 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/191> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/191> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/2> a ns1:Frame ;
+    ns1:frameIndex 2 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/2> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/2> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/20> a ns1:Frame ;
+    ns1:frameIndex 20 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/20> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/20> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/21> a ns1:Frame ;
+    ns1:frameIndex 21 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/21> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/21> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/22> a ns1:Frame ;
+    ns1:frameIndex 22 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/22> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/22> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/23> a ns1:Frame ;
+    ns1:frameIndex 23 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/23> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/23> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/24> a ns1:Frame ;
+    ns1:frameIndex 24 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/24> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/24> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/25> a ns1:Frame ;
+    ns1:frameIndex 25 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/25> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/25> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/26> a ns1:Frame ;
+    ns1:frameIndex 26 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/26> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/26> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/27> a ns1:Frame ;
+    ns1:frameIndex 27 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/27> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/27> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/28> a ns1:Frame ;
+    ns1:frameIndex 28 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/28> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/28> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/29> a ns1:Frame ;
+    ns1:frameIndex 29 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/29> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/29> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/3> a ns1:Frame ;
+    ns1:frameIndex 3 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/3> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/3> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/30> a ns1:Frame ;
+    ns1:frameIndex 30 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/30> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/30> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/31> a ns1:Frame ;
+    ns1:frameIndex 31 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/31> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/31> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/32> a ns1:Frame ;
+    ns1:frameIndex 32 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/32> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/32> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/33> a ns1:Frame ;
+    ns1:frameIndex 33 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/33> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/33> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/34> a ns1:Frame ;
+    ns1:frameIndex 34 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/34> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/34> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/35> a ns1:Frame ;
+    ns1:frameIndex 35 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/35> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/35> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/36> a ns1:Frame ;
+    ns1:frameIndex 36 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/36> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/36> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/37> a ns1:Frame ;
+    ns1:frameIndex 37 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/37> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/37> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/38> a ns1:Frame ;
+    ns1:frameIndex 38 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/38> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/38> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/39> a ns1:Frame ;
+    ns1:frameIndex 39 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/39> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/39> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/4> a ns1:Frame ;
+    ns1:frameIndex 4 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/4> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/4> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/40> a ns1:Frame ;
+    ns1:frameIndex 40 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/40> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/40> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/41> a ns1:Frame ;
+    ns1:frameIndex 41 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/41> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/41> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/42> a ns1:Frame ;
+    ns1:frameIndex 42 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/42> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/42> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/43> a ns1:Frame ;
+    ns1:frameIndex 43 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/43> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/43> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/44> a ns1:Frame ;
+    ns1:frameIndex 44 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/44> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/44> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/45> a ns1:Frame ;
+    ns1:frameIndex 45 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/45> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/45> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/46> a ns1:Frame ;
+    ns1:frameIndex 46 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/46> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/46> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/47> a ns1:Frame ;
+    ns1:frameIndex 47 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/47> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/47> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/48> a ns1:Frame ;
+    ns1:frameIndex 48 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/48> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/48> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/49> a ns1:Frame ;
+    ns1:frameIndex 49 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/49> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/49> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/5> a ns1:Frame ;
+    ns1:frameIndex 5 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/5> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/5> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/50> a ns1:Frame ;
+    ns1:frameIndex 50 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/50> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/50> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/51> a ns1:Frame ;
+    ns1:frameIndex 51 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/51> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/51> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/52> a ns1:Frame ;
+    ns1:frameIndex 52 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/52> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/52> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/53> a ns1:Frame ;
+    ns1:frameIndex 53 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/53> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/53> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/54> a ns1:Frame ;
+    ns1:frameIndex 54 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/54> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/54> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/55> a ns1:Frame ;
+    ns1:frameIndex 55 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/55> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/55> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/56> a ns1:Frame ;
+    ns1:frameIndex 56 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/56> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/56> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/57> a ns1:Frame ;
+    ns1:frameIndex 57 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/57> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/57> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/58> a ns1:Frame ;
+    ns1:frameIndex 58 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/58> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/58> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/59> a ns1:Frame ;
+    ns1:frameIndex 59 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/59> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/59> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/6> a ns1:Frame ;
+    ns1:frameIndex 6 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/6> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/6> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/60> a ns1:Frame ;
+    ns1:frameIndex 60 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/60> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/60> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/61> a ns1:Frame ;
+    ns1:frameIndex 61 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/61> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/61> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/62> a ns1:Frame ;
+    ns1:frameIndex 62 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/62> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/62> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/63> a ns1:Frame ;
+    ns1:frameIndex 63 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/63> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/63> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/64> a ns1:Frame ;
+    ns1:frameIndex 64 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/64> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/64> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/65> a ns1:Frame ;
+    ns1:frameIndex 65 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/65> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/65> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/66> a ns1:Frame ;
+    ns1:frameIndex 66 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/66> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/66> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/67> a ns1:Frame ;
+    ns1:frameIndex 67 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/67> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/67> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/68> a ns1:Frame ;
+    ns1:frameIndex 68 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/68> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/68> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/69> a ns1:Frame ;
+    ns1:frameIndex 69 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/69> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/69> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/7> a ns1:Frame ;
+    ns1:frameIndex 7 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/7> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/7> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/70> a ns1:Frame ;
+    ns1:frameIndex 70 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/70> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/70> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/71> a ns1:Frame ;
+    ns1:frameIndex 71 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/71> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/71> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/72> a ns1:Frame ;
+    ns1:frameIndex 72 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/72> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/72> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/73> a ns1:Frame ;
+    ns1:frameIndex 73 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/73> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/73> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/74> a ns1:Frame ;
+    ns1:frameIndex 74 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/74> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/74> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/75> a ns1:Frame ;
+    ns1:frameIndex 75 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/75> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/75> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/76> a ns1:Frame ;
+    ns1:frameIndex 76 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/76> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/76> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/77> a ns1:Frame ;
+    ns1:frameIndex 77 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/77> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/77> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/78> a ns1:Frame ;
+    ns1:frameIndex 78 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/78> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/78> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/79> a ns1:Frame ;
+    ns1:frameIndex 79 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/79> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/79> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/8> a ns1:Frame ;
+    ns1:frameIndex 8 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/8> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/8> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/80> a ns1:Frame ;
+    ns1:frameIndex 80 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/80> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/80> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/81> a ns1:Frame ;
+    ns1:frameIndex 81 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/81> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/81> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/82> a ns1:Frame ;
+    ns1:frameIndex 82 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/82> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/82> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/83> a ns1:Frame ;
+    ns1:frameIndex 83 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/83> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/83> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/84> a ns1:Frame ;
+    ns1:frameIndex 84 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/84> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/84> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/85> a ns1:Frame ;
+    ns1:frameIndex 85 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/85> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/85> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/86> a ns1:Frame ;
+    ns1:frameIndex 86 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/86> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/86> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/87> a ns1:Frame ;
+    ns1:frameIndex 87 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/87> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/87> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/88> a ns1:Frame ;
+    ns1:frameIndex 88 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/88> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/88> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/89> a ns1:Frame ;
+    ns1:frameIndex 89 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/89> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/89> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/9> a ns1:Frame ;
+    ns1:frameIndex 9 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/9> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/9> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/90> a ns1:Frame ;
+    ns1:frameIndex 90 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/90> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/90> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/91> a ns1:Frame ;
+    ns1:frameIndex 91 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/91> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/91> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/92> a ns1:Frame ;
+    ns1:frameIndex 92 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/92> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/92> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/93> a ns1:Frame ;
+    ns1:frameIndex 93 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/93> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/93> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/94> a ns1:Frame ;
+    ns1:frameIndex 94 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/94> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/94> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/95> a ns1:Frame ;
+    ns1:frameIndex 95 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/95> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/95> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/96> a ns1:Frame ;
+    ns1:frameIndex 96 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/96> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/96> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/97> a ns1:Frame ;
+    ns1:frameIndex 97 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/97> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/97> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/98> a ns1:Frame ;
+    ns1:frameIndex 98 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/98> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/98> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/frame/99> a ns1:Frame ;
+    ns1:frameIndex 99 ;
+    ns1:hasDepthImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/depth/99> ;
+    ns1:hasRGBImage <http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/99> .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/1> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/1.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/10> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/10.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/100> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/100.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/101> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/101.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/102> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/102.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/103> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/103.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/104> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/104.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/105> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/105.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/106> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/106.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/107> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/107.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/108> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/108.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/109> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/109.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/11> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/11.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/110> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/110.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/111> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/111.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/112> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/112.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/113> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/113.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/114> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/114.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/115> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/115.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/116> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/116.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/117> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/117.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/118> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/118.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/119> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/119.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/12> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/12.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/120> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/120.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/121> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/121.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/122> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/122.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/123> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/123.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/124> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/124.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/125> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/125.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/126> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/126.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/127> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/127.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/128> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/128.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/129> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/129.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/13> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/13.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/130> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/130.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/131> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/131.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/132> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/132.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/133> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/133.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/134> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/134.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/135> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/135.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/136> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/136.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/137> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/137.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/138> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/138.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/139> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/139.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/14> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/14.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/140> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/140.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/141> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/141.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/142> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/142.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/143> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/143.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/144> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/144.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/145> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/145.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/146> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/146.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/147> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/147.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/148> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/148.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/149> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/149.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/15> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/15.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/150> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/150.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/151> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/151.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/152> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/152.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/153> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/153.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/154> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/154.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/155> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/155.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/156> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/156.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/157> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/157.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/158> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/158.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/159> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/159.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/16> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/16.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/160> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/160.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/161> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/161.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/162> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/162.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/163> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/163.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/164> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/164.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/165> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/165.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/166> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/166.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/167> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/167.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/168> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/168.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/169> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/169.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/17> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/17.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/170> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/170.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/171> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/171.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/172> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/172.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/173> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/173.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/174> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/174.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/175> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/175.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/176> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/176.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/177> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/177.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/178> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/178.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/179> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/179.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/18> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/18.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/180> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/180.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/181> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/181.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/182> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/182.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/183> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/183.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/184> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/184.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/185> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/185.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/186> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/186.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/187> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/187.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/188> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/188.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/189> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/189.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/19> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/19.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/190> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/190.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/191> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/191.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/2> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/2.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/20> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/20.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/21> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/21.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/22> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/22.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/23> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/23.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/24> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/24.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/25> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/25.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/26> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/26.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/27> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/27.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/28> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/28.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/29> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/29.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/3> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/3.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/30> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/30.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/31> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/31.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/32> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/32.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/33> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/33.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/34> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/34.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/35> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/35.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/36> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/36.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/37> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/37.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/38> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/38.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/39> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/39.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/4> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/4.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/40> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/40.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/41> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/41.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/42> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/42.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/43> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/43.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/44> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/44.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/45> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/45.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/46> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/46.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/47> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/47.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/48> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/48.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/49> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/49.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/5> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/5.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/50> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/50.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/51> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/51.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/52> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/52.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/53> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/53.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/54> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/54.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/55> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/55.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/56> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/56.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/57> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/57.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/58> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/58.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/59> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/59.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/6> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/6.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/60> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/60.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/61> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/61.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/62> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/62.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/63> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/63.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/64> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/64.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/65> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/65.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/66> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/66.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/67> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/67.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/68> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/68.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/69> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/69.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/7> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/7.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/70> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/70.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/71> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/71.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/72> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/72.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/73> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/73.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/74> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/74.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/75> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/75.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/76> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/76.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/77> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/77.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/78> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/78.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/79> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/79.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/8> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/8.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/80> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/80.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/81> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/81.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/82> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/82.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/83> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/83.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/84> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/84.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/85> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/85.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/86> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/86.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/87> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/87.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/88> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/88.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/89> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/89.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/9> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/9.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/90> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/90.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/91> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/91.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/92> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/92.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/93> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/93.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/94> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/94.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/95> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/95.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/96> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/96.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/97> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/97.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/98> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/98.png" .
+
+<http://taica.course/hw1/data/batch/floor1_first_floor_sor_nb20_std3/rgb/99> a ns1:RGBImage ;
+    schema:contentUrl "eval/first_floor_sor_nb20_std3/rgb/99.png" .
+

@@ -1,0 +1,6 @@
+[experiment] batch 'floor1_first_floor_sor_nb20_std3': 191 frames -> 1522 pipeline factor occurrence(s)
+[experiment] experiment IRI  http://taica.course/hw1/experiment/phase1_depth_sor
+[experiment] declarationDigest ff473edf520b4b0ffee134d9d4fc9b2f8d2ec80c178d4637608f1632dd7a32c7
+[experiment] appended 13524 triples below the marker -> /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_depth_sor/phase1_depth_sor.ttl
+[experiment] this file is now SEALED: edit it above the marker and every reader will refuse it. Next: `api.py explore /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_depth_sor/phase1_depth_sor.ttl`, then `reconstruct.py --experiment /home/wmnet/Documents/GitHub/physicalai26-hw/hw1/experiments/phase1_depth_sor/phase1_depth_sor.ttl`.
+Phase 1 depth SOR baseline sealed with fresh factor measurements.

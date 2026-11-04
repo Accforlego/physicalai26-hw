@@ -1,0 +1,17 @@
+{
+  "experiments/phase1_baseline/reconstruction.png": "e1f475d41ae5b9b4fd353f0ae713ebe9211246ca1b762194f7abfaeacd493113",
+  "experiments/phase1_baseline/reconstruction_baseline.png": "e1f475d41ae5b9b4fd353f0ae713ebe9211246ca1b762194f7abfaeacd493113",
+  "experiments/phase1_baseline/phase1_baseline.ttl": "c9952a5930b78f894c5de670efaefdf37b4405e37452e53462ce31020d2bf92e",
+  "experiments/phase1_baseline/plots/dashboard.html": "9115c5c1dea176bb478444ae5965341d8a94e834b2a4ecfb8fbec527cdbb3fe3",
+  "experiments/phase1_baseline/plots/distributions.html": "5f0f576e1f32ea8907c4c50d1bc694f37f025ecfd0d635d70efcaad17be9eb07",
+  "experiments/phase1_baseline/plots/tradeoff.html": "4f9f4a8ecb4e38ad38811c5275883dc2e58b234be48588784132b84d31f202ca",
+  "experiments/phase1_baseline/plots/timelines.html": "97f87b07650e5536078723d664036069a720c29f765903e33a8050e5000dc512",
+  "experiments/phase1_baseline/analysis/inspection_notes.md": "e8724b037dc279787d251c783045aa31b28a9b5b3be33554553303fb09f0a94a",
+  "experiments/phase1_baseline/analysis/trajectory_diagnostic.npz": "43f49c160b200e95d6d90326a2db2fd1548f2a2cbe05fe0851504c0500becbe9",
+  "experiments/phase1_baseline/analysis/flagged_gt_route.png": "14a97a06794635cb2a0e429e2ee5caa8a12369d94b1c34903ed213a71b79a5f3",
+  "experiments/phase1_baseline/analysis/rgb_depth_comparison.png": "d7043482fc62b7c36a3693d47965374307b19c25851fb51c4b779367847e8340",
+  "experiments/phase1_baseline/analysis/inspect_baseline.py": "61572e3776b4bc7b817338ab0f6451ef24c15185d1b4917b03173222a7e48929",
+  "experiments/phase1_baseline/analysis/factor_comparison.png": "69af63568fde1b54295876e50afe3866cd5771fd45213d84eb8239b68866a9ef",
+  "experiments/phase1_baseline/analysis/inspect_trajectory.py": "e3dc7b7a5f581e6ce1760d9fce123f4b95fd969ce25447c35c0a4e948926d739",
+  "experiments/phase1_baseline/analysis/trajectory_diagnostic.png": "dc7afff6374ea216e566d7941a882413183d9364624685db09373949c1213715"
+}

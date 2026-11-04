@@ -1,0 +1,22 @@
+Prepared 25 frames
+Prepared 50 frames
+Prepared 75 frames
+Prepared 100 frames
+Prepared 125 frames
+Prepared 150 frames
+Prepared 175 frames
+{
+  "source_capture": "eval/first_floor",
+  "derived_capture": "eval/first_floor_sor_nb20_std3",
+  "method": "Open3D per-frame statistical outlier removal before voxelization",
+  "nb_neighbors": 20,
+  "std_ratio": 3.0,
+  "frame_count": 191,
+  "preprocessing_seconds": 23.15702330300701,
+  "mean_removed_fraction": 0.014842261872098791,
+  "max_removed_fraction": 0.03475228022632893,
+  "total_raw_points": 47662199,
+  "total_removed_points": 712919,
+  "original_positive_depths_unchanged": true,
+  "rgb_gt_intrinsics_copied_verbatim": true
+}

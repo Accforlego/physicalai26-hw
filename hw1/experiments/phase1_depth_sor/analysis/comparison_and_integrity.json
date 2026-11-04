@@ -1,0 +1,19 @@
+{
+  "frame_count_each": 191,
+  "retained_frame_fraction": 1.0,
+  "baseline_mean_l2_m": 0.058834807103078444,
+  "sor_mean_l2_m": 0.33840585962539277,
+  "baseline_max_l2_m": 0.11694108711092455,
+  "sor_max_l2_m": 0.780425960023352,
+  "mean_removed_point_fraction": 0.014842261872098791,
+  "preprocessing_seconds": 23.15702330300701,
+  "sor_reconstruction_seconds": 135.1420371659915,
+  "sor_total_including_preprocessing_seconds": 160.10786540899426,
+  "baseline_runtime_seconds": null,
+  "all_original_capture_and_baseline_hashes_unchanged": true,
+  "all_rgb_gt_intrinsics_identical": true,
+  "all_retained_positive_depth_values_unchanged": true,
+  "all_derived_raw_counts_match_new_pipeline_factors": true,
+  "factor_occurrences": 1522,
+  "independent_score_verified": true
+}
