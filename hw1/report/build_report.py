@@ -8,6 +8,7 @@ import html
 import json
 import os
 import re
+import shutil
 from pathlib import Path
 
 from PIL import Image as PILImage
@@ -32,13 +33,12 @@ for name,file in [('Body','DejaVuSans.ttf'),('Bold','DejaVuSans-Bold.ttf'),('Ita
     pdfmetrics.registerFont(TTFont(name,str(font_path)))
 pdfmetrics.registerFontFamily('Body',normal='Body',bold='Bold',italic='Italic',boldItalic='Bold')
 W,H=A4; M=48; CW=W-2*M
-NAVY=colors.HexColor('#193d56'); TEAL=colors.HexColor('#217987'); GRAY=colors.HexColor('#53616b')
-body=ParagraphStyle('body',fontName='Body',fontSize=9.65,leading=13.8,textColor=colors.HexColor('#202c34'),spaceAfter=6)
-small=ParagraphStyle('small',parent=body,fontSize=8.1,leading=11.1,textColor=GRAY)
+body=ParagraphStyle('body',fontName='Body',fontSize=9.65,leading=13.8,textColor=colors.black,spaceAfter=6)
+small=ParagraphStyle('small',parent=body,fontSize=8.1,leading=11.1)
 caption=ParagraphStyle('caption',parent=small,fontSize=8,leading=10.7)
-sub=ParagraphStyle('sub',parent=body,fontName='Bold',fontSize=11,leading=15,textColor=NAVY)
-cell=ParagraphStyle('cell',parent=small,fontSize=8.1,leading=11,textColor=colors.HexColor('#202c34'))
-headcell=ParagraphStyle('headcell',parent=cell,fontName='Bold',textColor=colors.white)
+sub=ParagraphStyle('sub',parent=body,fontName='Bold',fontSize=11,leading=15)
+cell=ParagraphStyle('cell',parent=small,fontSize=8.1,leading=11)
+headcell=ParagraphStyle('headcell',parent=cell,fontName='Bold')
 c=canvas.Canvas(str(OUTPUT),pagesize=A4)
 c.setTitle('HW1 - 3D Scene Reconstruction | 115062519')
 c.setAuthor('115062519')
@@ -54,29 +54,23 @@ def plain(s):
 
 def paragraph(text,style=body,gap=6):
     global y
+    text=re.sub(r' color="[^"]*"','',text)
     p=Paragraph(text,style);_,h=p.wrap(CW,1000)
     if y-h<57:raise RuntimeError(f'Page {page_num} overflow before: {plain(text)[:70]} (y={y:.1f}, h={h:.1f})')
     p.drawOn(c,M,y-h);y-=h+gap
     md.extend([plain(text),''])
 
 
-def page(title,kicker):
+def page(title):
     global y,page_num
     if page_num:
         if y<45:raise RuntimeError('Overflow')
         c.showPage()
     page_num+=1
-    c.setStrokeColor(TEAL);c.setLineWidth(2);c.line(M,H-42,W-M,H-42)
-    c.setFont('Bold',8);c.setFillColor(GRAY);c.drawString(M,H-29,'PHYSICAL AI / HW1')
-    c.setFont('Body',8);c.drawRightString(W-M,H-29,'115062519')
-    c.setFont('Bold',19);c.setFillColor(NAVY);c.drawString(M,H-76,title)
-    c.setFont('Body',8.6);c.setFillColor(TEAL);c.drawString(M,H-94,kicker)
-    c.setStrokeColor(colors.HexColor('#d8e1e7'));c.setLineWidth(.5);c.line(M,44,W-M,44)
-    c.setFillColor(GRAY);c.setFont('Body',7.5);c.drawString(M,31,'3D Scene Reconstruction | 4 November 2026')
-    c.drawRightString(W-M,31,f'{page_num} / 4')
+    c.setFont('Bold',19);c.setFillColor(colors.black);c.drawString(M,H-62,title)
     c.bookmarkPage(f'page{page_num}');c.addOutlineEntry(title,f'page{page_num}',0)
-    y=H-115
-    md.extend([f'## {title}',kicker,''])
+    y=H-86
+    md.extend([f'## {title}',''])
 
 
 def heading(text):paragraph(text,sub,gap=5)
@@ -86,11 +80,12 @@ def table(headers,rows,widths):
     global y
     data=[[Paragraph(str(x),headcell) for x in headers]]+[[Paragraph(str(x),cell) for x in row] for row in rows]
     t=Table(data,colWidths=widths,repeatRows=1,hAlign='LEFT')
-    t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),NAVY),('VALIGN',(0,0),(-1,-1),'TOP'),
+    t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),
         ('LEFTPADDING',(0,0),(-1,-1),6),('RIGHTPADDING',(0,0),(-1,-1),6),
         ('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5),
-        ('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.HexColor('#eef3f6'),colors.white]),
-        ('LINEBELOW',(0,-1),(-1,-1),.5,colors.HexColor('#b7c6cf'))]))
+        ('LINEABOVE',(0,0),(-1,0),.5,colors.black),
+        ('LINEBELOW',(0,0),(-1,0),.5,colors.black),
+        ('LINEBELOW',(0,-1),(-1,-1),.5,colors.black)]))
     _,h=t.wrap(CW,1000)
     if y-h<57:raise RuntimeError(f'Table overflow page {page_num}')
     t.drawOn(c,M,y-h);y-=h+9
@@ -122,7 +117,7 @@ def j(name):return json.loads((ROOT/'experiments'/name/'analysis/results.json').
 
 
 # Page 1
-page('3D Scene Reconstruction','METHODS / DATA VERIFICATION')
+page('3D Scene Reconstruction')
 paragraph('Reconstruct apartment_0 from RGB-D, inspect pipeline factors, and evaluate interventions. Phase 1 uses 191 provided frames; Phase 2 uses 351 manually captured frames. The main finding is that removing observations or points does not reliably improve alignment. Historical baselines achieve Mean L2 of 0.0588 m and 0.2407 m; reruns reveal sensitivity to execution conditions.')
 heading('1. Pipeline and evaluation')
 paragraph('Read each capture\'s intrinsics.json; convert uint16 depth from millimeters to meters and discard invalid depth. Implement pinhole unprojection directly, without Open3D\'s projection helper: f = W/[2 tan(HFOV/2)], c = (W/2,H/2), X = (u-cx)z/f, Y = (v-cy)z/f, Z = z. Downsample, estimate normals, compute FPFH, initialize current-to-previous alignment with RANSAC, and refine with point-to-plane ICP [2,3]. Chain transforms and merge clouds; no loop closure is used.')
@@ -139,7 +134,7 @@ image(ASSETS/'phase1_factors.png',maxheight=160,cap='Figure 1. Phase 1 baseline 
 paragraph('Frames 100-114 have mean raw support 215,269, ICP fitness 0.851 and RMSE 0.0249 m; the saved diagnostic trajectory reproduces the historical score and shows increased offset there. Yet frame 120 has 16.31% missing depth and fitness 0.9983. Missing depth, turns and visible structure must be considered together; coincidence does not prove causation.',small)
 
 # Page 2
-page('Results: Phase 1','FIRST-FLOOR INTERVENTIONS / MAPS FROM BOTH PHASES')
+page('Results: Phase 1')
 table(['Run','N / kept','Voxel m','Mean L2 m','Total s'],[
     ['Historical full baseline','191 / 100%','0.05','0.058835','NR'],
     ['Depth + ICP selection','179 / 93.72%','0.05','0.305000','280.44'],
@@ -154,7 +149,7 @@ paragraph('<b>Selection:</b> exclude a candidate only when RawPointCount &lt; 22
 paragraph('<b>Point filtering:</b> per-frame statistical outlier removal (SOR) [4] zeros removed depth pixels while preserving all frames and retained depth values. Mean removal is 1.48% (max 3.48%). Error grows from 3.35 to 21.98 cm over 103-104, then to 76.18 cm at 105. Masks also remove distant real surfaces, so lost geometric support is a plausible, unproven cause. Neither this setting nor finer voxels improves the saved baseline; original data and artifacts remain unchanged.')
 
 # Page 3
-page('Results: Phase 2','MANUAL COLLECTION / CONSERVATIVE SELECTION')
+page('Results: Phase 2')
 paragraph('Manually collect 351 frames using second_floor.yaml into eval/_data/second_floor/115062519_manual_20261104_082753. RGB/depth/GT entries match and decode. Maximum adjacent motion is 0.4715 m and 6.00 degrees; mean valid depth is 99.53%. The route traverses connecting spaces and room-facing views; complete floor coverage remains unverified.')
 paragraph('Using current zone settings, benign/moderate/severe/outside counts are 4/11/0/336; no capture-time configuration snapshot exists. Therefore, this sequence does not test severe-zone performance. The earlier API capture has 281 frames and Mean L2 5.8823 m (215.06 s total); different routes, viewpoints and zone exposure prevent a controlled manual/API comparison.',small)
 table(['Evaluation','Frames','Mean L2 m','Total s'],[
@@ -168,7 +163,7 @@ image(ASSETS/'phase2_selection_comparison.png',maxheight=155,cap='Figure 4. Base
 paragraph('The gain is only <b>2.78 mm (1.16%) on common frames</b>. Reruns differ by up to 1.32 mm in a coordinate before selection changes; stable improvement is unproven. New splice pairs complete successfully. Full factor measurement versus pair-diagnostic work also differs, so the timing difference cannot be assigned solely to deletion.',small)
 
 # Page 4
-page('Custom ICP and discussion','BONUS COMPARISON / REQUIRED QUESTIONS')
+page('Custom ICP and discussion')
 paragraph('<b>Implementation.</b> my_local_icp_algorithm uses SciPy cKDTree nearest neighbors, a 0.075 m gate and point-to-plane residual r = n dot (p-q). Solve J delta = -r with J = [p cross n, n], then left-compose rotation/translation. Stop at 60 iterations, fewer than 10 pairs, or residual-change/step norm below 1e-6. It does not call Open3D ICP; no robust loss, damping or degeneracy checks were added.')
 table(['Same 191 original frames','Mean L2 m','Recon. s','Total s'],[
     ['Fresh Open3D reference','0.291071','152.23','154.13'],
@@ -188,5 +183,6 @@ paragraph('Full evidence remains under experiments/; report/sources.json records
 
 assert page_num==4
 c.save()
+shutil.copyfile(OUTPUT,ROOT/'report.pdf')
 (HERE/'report.md').write_text('\n'.join(md)+'\n')
 print(f'Wrote {OUTPUT} ({page_num} pages) and editable report/report.md')

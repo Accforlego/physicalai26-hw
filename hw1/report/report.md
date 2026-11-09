@@ -2,7 +2,6 @@
 Student ID: 115062519 | 4 November 2026
 
 ## 3D Scene Reconstruction
-METHODS / DATA VERIFICATION
 
 Reconstruct apartment_0 from RGB-D, inspect pipeline factors, and evaluate interventions. Phase 1 uses 191 provided frames; Phase 2 uses 351 manually captured frames. The main finding is that removing observations or points does not reliably improve alignment. Historical baselines achieve Mean L2 of 0.0588 m and 0.2407 m; reruns reveal sensitivity to execution conditions.
 
@@ -30,7 +29,6 @@ Figure 1. Phase 1 baseline factors. Shading: frames 50-60, 70-99, 100-114 and 11
 Frames 100-114 have mean raw support 215,269, ICP fitness 0.851 and RMSE 0.0249 m; the saved diagnostic trajectory reproduces the historical score and shows increased offset there. Yet frame 120 has 16.31% missing depth and fitness 0.9983. Missing depth, turns and visible structure must be considered together; coincidence does not prove causation.
 
 ## Results: Phase 1
-FIRST-FLOOR INTERVENTIONS / MAPS FROM BOTH PHASES
 
 | Run | N / kept | Voxel m | Mean L2 m | Total s |
 | --- | --- | --- | --- | --- |
@@ -55,7 +53,6 @@ Selection: exclude a candidate only when RawPointCount < 222,822.4 (85% of pixel
 Point filtering: per-frame statistical outlier removal (SOR) [4] zeros removed depth pixels while preserving all frames and retained depth values. Mean removal is 1.48% (max 3.48%). Error grows from 3.35 to 21.98 cm over 103-104, then to 76.18 cm at 105. Masks also remove distant real surfaces, so lost geometric support is a plausible, unproven cause. Neither this setting nor finer voxels improves the saved baseline; original data and artifacts remain unchanged.
 
 ## Results: Phase 2
-MANUAL COLLECTION / CONSERVATIVE SELECTION
 
 Manually collect 351 frames using second_floor.yaml into eval/_data/second_floor/115062519_manual_20261104_082753. RGB/depth/GT entries match and decode. Maximum adjacent motion is 0.4715 m and 6.00 degrees; mean valid depth is 99.53%. The route traverses connecting spaces and room-facing views; complete floor coverage remains unverified.
 
@@ -80,7 +77,6 @@ Figure 4. Baseline versus selected trajectories/errors (GT black). Curves use th
 The gain is only 2.78 mm (1.16%) on common frames. Reruns differ by up to 1.32 mm in a coordinate before selection changes; stable improvement is unproven. New splice pairs complete successfully. Full factor measurement versus pair-diagnostic work also differs, so the timing difference cannot be assigned solely to deletion.
 
 ## Custom ICP and discussion
-BONUS COMPARISON / REQUIRED QUESTIONS
 
 Implementation. my_local_icp_algorithm uses SciPy cKDTree nearest neighbors, a 0.075 m gate and point-to-plane residual r = n dot (p-q). Solve J delta = -r with J = [p cross n, n], then left-compose rotation/translation. Stop at 60 iterations, fewer than 10 pairs, or residual-change/step norm below 1e-6. It does not call Open3D ICP; no robust loss, damping or degeneracy checks were added.
 

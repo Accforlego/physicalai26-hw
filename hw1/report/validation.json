@@ -1,7 +1,7 @@
 {
   "pages": 4,
   "previous_pages": 7,
-  "pdf_sha256": "05615e7990fe655e9f41ab3ce5ae6dd3db0be6be90bc33046bc6bfa2bf4407fa",
+  "pdf_sha256": "56d6f96bbf290397ae9f527c667dc11a69c85a727040e6a40d6bf2381cf7df79",
   "saved_source_hashes_unchanged": true,
   "key_metrics_match_saved_results": true,
   "required_questions_present": true,
@@ -12,8 +12,10 @@
     "https://www.open3d.org/docs/release/tutorial/geometry/pointcloud_outlier_removal.html"
   ],
   "markdown_images_resolve": true,
-  "visual_review": "All 4 final page PNGs inspected; text, tables, plots, captions and footer bounds checked.",
+  "visual_review": "All 4 simplified page PNGs inspected; text, tables, plots and captions fit within page bounds. Headers, footers and decorative subtitles removed.",
   "new_reconstruction_runs": 0,
   "previous_markdown_word_count_approx": 2308,
-  "current_markdown_word_count_approx": 1481
+  "current_markdown_word_count_approx": 1629,
+  "text_and_table_colors": "Black only; embedded figures retain original colors.",
+  "submission_copy_matches_output": true
 }

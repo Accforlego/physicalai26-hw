@@ -1,6 +1,8 @@
 # HW1 report
 
 - Final English PDF: `../output/pdf/report.pdf` (4 pages).
+- Submission copy: `../report.pdf` (automatically synchronized by the builder).
+- Editable Word copy: `../report.docx`; export with `python report/build_docx.py`.
 - Text/figure export for review: `report.md`.
 - PDF content and layout source: `build_report.py`.
 - Figure rendering: `prepare_figures.py`; reads saved measurements and trajectories only.
@@ -15,6 +17,15 @@ improvements from single trials.
 To revise the PDF, edit the text/layout in `build_report.py` and rebuild.
 `report.md` is an exported review copy; editing it does not automatically change
 the PDF. The builder regenerates it together with the PDF.
+
+The layout uses black text, unfilled tables with thin black rules, and section
+titles without page headers, footers, page numbers, or decorative subtitles.
+Figures retain their original colors to distinguish experimental results.
+
+The Word exporter reuses the content in `build_report.py` and creates native
+paragraphs, headings and tables, with embedded figure images. Word edits are
+independent of the Python/PDF source; export a PDF from Word to retain those edits.
+Running the Word exporter again replaces the Word copy.
 
 From hw1, render data figures with the habitat environment:
 
